@@ -8559,6 +8559,9 @@ span.logintitle {
 .breadcrumb-area {
   position: relative;
   overflow: hidden;
+  background-repeat: no-repeat;
+    object-fit: cover;
+    background-size: 100% 100%;
 }
 
 .breadcrumb-area .breadcrumb-img-1 {
@@ -8653,18 +8656,7 @@ span.logintitle {
   }
 }
 
-.breadcrumb-area:before {
-  position: absolute;
-  content: "";
-  left: 0;
-  right: 0;
-  bottom: -25px;
-  margin: 0 auto;
-  width: 342px;
-  height: 342px;
-  border-radius: 100%;
-  background-color: #ffffff;
-}
+
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .breadcrumb-area:before {
