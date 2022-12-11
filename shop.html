@@ -838,7 +838,7 @@
                                         <div class="sidebar-widget mb-15 mt-15" data-aos="fade-up" data-aos-delay="200">
                                             <div class="search-wrap-2">
                                                 <form class="search-2-form" action="#">
-                                                    <input placeholder="Search*" type="text">
+                                                    <input id="attributesearch" placeholder="Search*" type="text">
                                                     <button class="button-search"><i class=" ti-search "></i></button>
                                                 </form>
                                                 <div class="inputbox-filter mt-10">
@@ -896,7 +896,7 @@
                                           <div class="sidebar-widget mb-15 mt-15" data-aos="fade-up" data-aos-delay="200">
                                               <div class="search-wrap-2">
                                                   <form class="search-2-form" action="#">
-                                                      <input placeholder="Search*" type="text">
+                                                      <input id="attributesearch" placeholder="Search*" type="text">
                                                       <button class="button-search"><i class=" ti-search "></i></button>
                                                   </form>
                                                   <div class="inputbox-filter mt-10">
@@ -935,7 +935,7 @@
                                           <div class="sidebar-widget mb-15 mt-15" data-aos="fade-up" data-aos-delay="200">
                                               <div class="search-wrap-2">
                                                   <form class="search-2-form" action="#">
-                                                      <input placeholder="Search*" type="text">
+                                                      <input id="attributesearch" placeholder="Search*" type="text">
                                                       <button class="button-search"><i class=" ti-search "></i></button>
                                                   </form>
                                                   <div class="inputbox-filter mt-10">
@@ -1176,5 +1176,24 @@
     <script src="assets/js/plugins/ajax-mail.js"></script>
     <!-- Main JS -->
     <script src="assets/js/main.js"></script>
+    <script>
+            jQuery(document).ready(function($){
+
+                //attributesearch is a input type text
+                $('input#attributesearch').keyup(function() {
+                    var searchString = $(this).val();
+                    $("ul li").each(function(index, value) {
+                        currentName = $(value).text()
+                        if( currentName.toUpperCase().indexOf(searchString.toUpperCase()) > -1) {
+                        $(value).show();
+                        } else {
+                            $(value).hide();
+                        }
+                        
+                    });
+                    
+                });          
+                });
+    </script>
 </body>
 </html>
