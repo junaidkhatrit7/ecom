@@ -460,8 +460,9 @@
         slidesPerView: 1,
         loop: false,
         thumbs: {
-            swiper: productDetailsSmallOne
+            swiper: productDetailsSmallTwo
         }
+        
     });
     
     /*----------------------------------------
