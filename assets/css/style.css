@@ -5377,21 +5377,24 @@ span.logintitle {
   display: flex;
   -webkit-box-align: center;
   -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: flex-end;
+  justify-content: flex-start;
+  align-content: center;
 }
 
 .product-quality {
-  width: 80px;
+  width: 150px;
   overflow: hidden;
   position: relative;
   border: 1px solid #e8e8e8;
+  margin-right: 20px;
 }
 
 .product-quality > input {
-  width: 83px;
+  width: 150px;
   border: none;
-  height: 60px;
+  height: 45px;
   line-height: 50px;
   text-align: center;
   font-size: 14px;
@@ -5421,17 +5424,21 @@ span.logintitle {
   left: auto;
   right: 10px;
   font-size: 20px;
-  top: 15px;
+  top: 8px;
 }
 
 .product-quality .qtybutton.dec {
   top: -2px;
   font-size: 30px;
-  line-height: 60px;
+  line-height: 45px;
 }
 
 .single-product-cart {
   margin: 0 24px 0 00px;
+}
+
+.single-product-cart-page {
+  margin: 0 24px 0 24px;
 }
 
 .single-product-cart.mrg-none {
@@ -5452,6 +5459,15 @@ span.logintitle {
   padding: 13px 37px;
   z-index: 1;
   margin-top: 30px;
+}
+
+.single-product-cart-page > a {
+  display: inline-block;
+    font-weight: 600;
+    color: #ffffff;
+    background-color: #e97730;
+    padding: 20px 37px;
+    z-index: 1;
 }
 
 @media only screen and (max-width: 767px) {
@@ -7846,8 +7862,24 @@ span.logintitle {
 
 .product-details-content .product-details-meta {
   border-bottom: 1px solid #f2f2f2;
-  margin: 34px 0 40px;
-  padding-bottom: 33px;
+  margin: 14px 0 10px;
+  padding-bottom: 10px;
+}
+
+.border8{
+  border-radius: 8px !important;
+}
+span.new-price.bold {
+  font-size: 30px;
+}
+.inline-block{
+  display: inline-block;
+}
+.codcheck{
+  width: 470px;
+}
+.single-product-cart.blackbg > a{
+  background-color: var(--secondary-color);
 }
 
 @media only screen and (max-width: 767px) {
@@ -8681,7 +8713,20 @@ span.logintitle {
 
 .breadcrumb-content {
   position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: center;
+
 }
+.breadcrumb-content ul li i{
+  font-size: 13px;
+    line-height: 1;
+    position: relative;
+    top: 2px;
+    color: #000000;
+} 
 
 .breadcrumb-content h2 {
   font-size: 48px;
@@ -9033,7 +9078,10 @@ span.logintitle {
 .inputbox-filter > ul > li > input{
   width: auto;
 }
-
+.inputbox-filter{
+  height: 170px;
+  overflow: auto;
+}
 .inputbox-filter > ul > li {
   margin: 0 0 14px;
 }
