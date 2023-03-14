@@ -12047,3 +12047,19 @@ span.new-price.bold {
 }
 
 /* ------------------- */
+
+
+/* School Listing Emapty */
+
+.icon-column {
+  display: flex;
+  justify-content: center;
+}
+
+.mx-auto{
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+
+/* ---------- */
