@@ -12057,9 +12057,9 @@ span.new-price.bold {
 }
 
 .mx-auto{
-  display: flex;
-  justify-content: center;
-  margin: auto;
+  display: flex !important; 
+  justify-content: center important;
+  margin: auto important;
 }
 
 /* ---------- */
