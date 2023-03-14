@@ -12058,8 +12058,30 @@ span.new-price.bold {
 
 .mx-auto{
   display: flex !important; 
-  justify-content: center important;
-  margin: auto important;
+  justify-content: center;
+  margin: auto;
+}
+
+/* ---------- */
+
+
+/* School Set */
+
+.school-set img {
+  width: 100%;
+}
+
+.drop-down-field {
+  display: flex;
+}
+
+.drop-down-field .shop-sorting-area:last-child {
+  padding-left: 1em;
+}
+
+.school-set h2 {
+  color: var(--primary-color);
+  font-weight: 600;
 }
 
 /* ---------- */
