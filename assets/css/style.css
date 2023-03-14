@@ -11978,3 +11978,72 @@ span.new-price.bold {
   text-align: center;
   z-index: 1;
 }
+
+
+/* School Listing Page */
+
+
+
+.image-left, .image-right
+{
+	margin: 1em 0;
+}
+
+
+	.image-left, .image-right
+	{
+		display: flex;
+		align-items: center;
+    border: 1px solid #e3e1e1;
+    padding: 20px;
+    min-height: 200px;
+  }
+
+	.image-left img
+	{
+		margin-right: 1em;
+		float: left; /* fallback */
+	}
+
+	.image-right img
+	{
+		order: 1;
+		margin-left: 1em;
+		float: right; /* fallback */
+    width: 80px;
+	}
+	
+	/* clearfix for fallback */
+	.image-left::after,
+	.image-right::after
+	{
+		content: "";
+  	display: block;
+		clear: both;
+
+	}
+
+
+
+	.image-left img, .image-right img
+	{
+		flex-shrink: 0;
+	}
+
+  
+
+
+.school-book-listing .single-product-filter > a {
+    padding: 5px 20px;
+    margin-top: 0;
+}
+
+.school-book-listing h5 {
+    color: var(--primary-color);
+}
+
+.school-book-listing .serchform form input {
+    border-radius: 0 !important;
+}
+
+/* ------------------- */
