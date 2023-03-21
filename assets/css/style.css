@@ -45,6 +45,10 @@
   padding: 0;
   --primary-color: #EC8B2D;
   --secondary-color: #000000;
+  --white-color:#ffffff; 
+  --font-size-label: 11px;
+  --out-of-stock-bg: rgba(255, 255, 255, 0.5);
+  --out-of-stock-badge-bg: #0000009d;
 }
 @media only screen and (min-width: 1200px) {
   .container {
@@ -12114,7 +12118,7 @@ img.rounded-circle.authorimg {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(255, 255, 255, 0.5); /* white color with 50% opacity */
+  background-color: var(--out-of-stock-bg); /* white color with 50% opacity */
   z-index: 1;
 }
 
@@ -12125,10 +12129,10 @@ img.rounded-circle.authorimg {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: #0000009d;
-  color: #fff;
+  background-color: var(--out-of-stock-badge-bg);
+  color: var(--white-color);
   padding: 5px 10px;
-  font-size: 11px;
+  font-size: var(--font-size-label);
   font-weight: bold;
   opacity: 1;
   z-index: 2 !important;
