@@ -12085,3 +12085,21 @@ span.new-price.bold {
 }
 
 /* ---------- */
+
+/* author page */
+
+.authorimg {
+  height: 200px;
+}
+
+@media (max-width: 600px){
+  .col-sm-6 {
+      flex: 0 0 auto;
+      width: 50%;
+  }
+  .product-wrap .product-img a img {
+      width: 100%;
+      height: auto;
+  }
+  }
+
