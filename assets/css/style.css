@@ -12138,7 +12138,7 @@ img.rounded-circle.authorimg {
 
 /* author & Publiher page end*/
 
-/*Publiher List page start*/
+/*Author List page start*/
 
 .container-filter {
   display: flex;
@@ -12168,4 +12168,8 @@ img.rounded-circle.authorimg {
   margin: 5px !important;
 }
 
-/*Publiher List page end*/
+img.rounded-circle.author-list-img {
+  height: 177px;
+}
+
+/*Author List page end*/
