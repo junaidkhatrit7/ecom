@@ -12088,9 +12088,7 @@ span.new-price.bold {
   font-weight: 600;
 }
 
-/* ---------- */
-
-/* author page */
+/* author & Publiher page start*/
 
 img.rounded-circle.authorimg {
   height: 200px;
@@ -12137,3 +12135,37 @@ img.rounded-circle.authorimg {
   opacity: 1;
   z-index: 2 !important;
 }
+
+/* author & Publiher page end*/
+
+/*Publiher List page start*/
+
+.container-filter {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: auto;
+  margin-right: auto;
+  width: max-content;
+}
+
+.container-filter a {
+  display: block;
+  padding: 5px 10px;
+  margin: 5px;
+  border: 1px solid var(--secondary-color);
+  text-decoration: none;
+  color: var(--secondary-color);
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.container-filter a:hover {
+  background-color: var(--secondary-color);
+  color: var(--white-color);
+}
+
+.container-filter .tab-style-1 a:last-child {
+  margin: 5px !important;
+}
+
+/*Publiher List page end*/
