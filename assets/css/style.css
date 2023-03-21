@@ -12121,8 +12121,6 @@ img.rounded-circle.authorimg {
 }
 
 .out-of-stock-container {
-  pointer-events: none;
-  opacity: 0.4;
   padding: 0 1rem 1rem;
   position: absolute;
   top: 0;
