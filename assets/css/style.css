@@ -12103,3 +12103,19 @@ img.rounded-circle.authorimg {
   }
   }
 
+.outofstock{
+  pointer-events: none;
+    opacity: 0.4;
+}
+
+.out-of-stock-badge {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #ff0000;
+  color: #fff;
+  padding: 5px 10px;
+  font-size: 12px;
+  font-weight: bold;
+}
