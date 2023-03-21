@@ -12106,6 +12106,7 @@ img.rounded-circle.authorimg {
 .outofstock{
   pointer-events: none;
     opacity: 0.4;
+    z-index: 0 !important;
 }
 
 .out-of-stock-badge {
@@ -12113,44 +12114,11 @@ img.rounded-circle.authorimg {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: #ff0000;
+  background-color: #000000;
   color: #fff;
   padding: 5px 10px;
-  font-size: 12px;
+  font-size: 11px;
   font-weight: bold;
-}
-
-.out-of-stock-container {
-  padding: 0 1rem 1rem;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  background-color: rgba(255, 255, 255, 0.2);
-  z-index: 99;
-}
-
-.out-of-stock-text {
-  text-transform: uppercase;
-  font-size: 10px;
-  font-weight: 500;
-  color: #2194F3;
-  background-color: #fff;
-  border: 1px solid #2194F3;
-  padding: 5px 10px;
-  z-index: 1;
+  opacity: 1;
+  z-index: 1 !important;
 }
