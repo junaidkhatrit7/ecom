@@ -12172,4 +12172,37 @@ img.rounded-circle.author-list-img {
   height: 177px;
 }
 
+.author-pagination {
+  display: flex;
+  justify-content: space-between;
+  width: 200px; /* adjust as needed */
+  margin: 0 auto; /* center the buttons horizontally */
+}
+
+.previous,
+.next {
+  padding: 10px 15px;
+  border: 1px solid var(--secondary-color);
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.previous:hover,
+.next:hover {
+  background-color: var(--secondary-color);
+  color: var(--white-color);
+}
+
+.previous:disabled,
+.next:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+
+/* hide the previous button when it's disabled */
+.previous:disabled {
+  visibility: hidden;
+}
+
+
 /*Author List page end*/
