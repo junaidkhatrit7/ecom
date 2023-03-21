@@ -12119,3 +12119,31 @@ img.rounded-circle.authorimg {
   font-size: 12px;
   font-weight: bold;
 }
+
+.out-of-stock-container {
+  padding: 0 1rem 1rem;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.2);
+  z-index: 99;
+}
+
+.out-of-stock-text {
+  text-transform: uppercase;
+  font-size: 10px;
+  font-weight: 500;
+  color: #2194F3;
+  background-color: #fff;
+  border: 1px solid #2194F3;
+  padding: 5px 10px;
+  z-index: 1;
+}
