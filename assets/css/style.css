@@ -12209,7 +12209,22 @@ img.rounded-circle.author-list-img {
 
 /*School set page start*/
 
+.product-details {
+  background-color: var(--white-color);
+  border: 1px solid #E2DCDC;
+  color: #000000;
+  padding: 10px 15px 0px 15px;
+  width: fit-content;
+  border-radius: 5px;
+}
 
+h4.start {
+  display: inline-block;
+}
+
+p.start {
+  display: inline;
+}
 
 /*School set page end*/
 
