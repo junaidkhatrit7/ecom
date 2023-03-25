@@ -12317,6 +12317,34 @@ tr.school-set-bg {
   vertical-align: middle;
 }
 
+.orignal-price{
+margin-right: 13px;
+color: #555252;
+text-decoration: line-through;
+}
+
+.sale-price{
+  font-size: 18px;
+  color: var(--secondary-color);
+}
+
+input.input-text.qty-new.text {
+  width: 90px !important;
+  border: none;
+  height: 45px;
+  line-height: 50px;
+  text-align: center;
+  font-size: 14px;
+  color: #8f8f8f;
+  padding: 0;
+  font-family: "Jost", sans-serif;
+  pointer-events: none;
+}
+
+.product-quality-new {
+  width: 90px;
+}
+
 /*School set details page end*/
 
 
