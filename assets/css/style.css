@@ -12230,6 +12230,10 @@ p.start {
   display: inline;
 }
 
+p.start-block {
+  display: inline-block;
+}
+
 
 /*School set page end*/
 
@@ -12347,3 +12351,49 @@ tr.school-set-bg {
   
 /*School set details page end*/
 
+/*School set defalt start*/
+
+.col-lg-8.pr-80 {
+  padding-right: 80px;
+}
+
+.pt-20{
+  padding-top: 20px;
+}
+
+.new-divider {
+    border-bottom: 3px solid var(--primary-color);
+    width: 40%;
+}
+
+h5.about-start {
+  display: inline-block;
+}
+
+h5.about-start-next {
+  display: inline;
+  color: var(--primary-color);
+}
+
+.school-set-details{
+  background-color: #F3F3F3;
+    border: 1px solid #ffffff;
+    padding: 15px 15px 0px 20px;
+    border-radius: 5px;
+}
+
+strong.txt-clr {
+  color: var(--primary-color);
+}
+
+button.school-set-button {
+  background-color: var(--primary-color);
+  border: 0px;
+  color: var(--white-color);
+  pointer-events: none;
+}
+
+img.book-icon {
+  max-width: 10%;
+}
+/*School set defalt end*/
