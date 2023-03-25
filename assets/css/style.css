@@ -45,6 +45,10 @@
   padding: 0;
   --primary-color: #EC8B2D;
   --secondary-color: #000000;
+  --white-color:#ffffff; 
+  --font-size-label: 11px;
+  --out-of-stock-bg: rgba(255, 255, 255, 0.5);
+  --out-of-stock-badge-bg: #0000009d;
 }
 @media only screen and (min-width: 1200px) {
   .container {
@@ -11072,7 +11076,7 @@ span.new-price.bold {
 .login-register-wrapper .login-form-container .login-register-form form .login-toggle-btn a {
   float: right;
   font-size: 15px;
-  color: #EC8B2D;
+  color: #000000;
   -webkit-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
@@ -11103,36 +11107,6 @@ span.new-price.bold {
   transition: all 0.3s ease 0s;
   z-index: 1;
 }
-
-.textcolor a {
-  color: var(--textcolor-color);
-}
-
-.textcolor a{
-  color:var(--textcolor-color);
-}
-
-.login-register-form label{
-  font-size: larger;
-}
-
-.login-form-container h3 {
-  text-align: center;
-
-}
-
-.login-register-wrapper .login-form-container form input {
-  background-color: transparent;
-  border: 1px solid #ebebeb;
-  font-size: 15px;
-  height: 50px;
-  margin-bottom: 30px;
-  padding: 0 15px;
-  color: #000000;
-  width: 100%;
-}
-
-  
 
 /*-------- 23. My account style ---------*/
 .myaccount-tab-menu {
@@ -12114,14 +12088,234 @@ span.new-price.bold {
   font-weight: 600;
 }
 
-.login-register-form input {
-  background-color: transparent;
-  border: 1px solid #ebebeb;
-  font-size: 15px;
-  height: 50px;
-  padding: 0 15px;
-  color: #000000;
-  width: 100%;
+/* author & Publiher page start*/
+
+img.rounded-circle.authorimg {
+  height: 200px;
 }
 
-/* ---------- */
+@media (max-width: 600px){
+  .col-sm-6 {
+      flex: 0 0 auto;
+      width: 50%;
+  }
+  .product-wrap .product-img a img {
+      width: 100%;
+      height: auto;
+  }
+  }
+
+.outofstock{
+  pointer-events: none;
+}
+
+.outofstock .product-wrap::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--out-of-stock-bg); /* white color with 50% opacity */
+  z-index: 1;
+}
+
+.out-of-stock-badge {
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--out-of-stock-badge-bg);
+  color: var(--white-color);
+  padding: 5px 10px;
+  font-size: var(--font-size-label);
+  font-weight: bold;
+  opacity: 1;
+  z-index: 2 !important;
+}
+
+/* author & Publiher page end*/
+
+/*Author & Publisher List page start*/
+
+.container-filter {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: auto;
+  margin-right: auto;
+  width: max-content;
+}
+
+.container-filter a {
+  display: block;
+  padding: 5px 10px;
+  margin: 5px;
+  border: 1px solid var(--secondary-color);
+  text-decoration: none;
+  color: var(--secondary-color);
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.container-filter a:hover {
+  background-color: var(--secondary-color);
+  color: var(--white-color);
+}
+
+.container-filter .tab-style-1 a:last-child {
+  margin: 5px !important;
+}
+
+img.rounded-circle.author-list-img {
+  height: 177px;
+}
+
+.author-pagination {
+  display: flex;
+  justify-content: space-between;
+  width: 200px; /* adjust as needed */
+  margin: 0 auto; /* center the buttons horizontally */
+}
+
+.previous,
+.next {
+  padding: 10px 15px;
+  border: 1px solid var(--secondary-color);
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.previous:hover,
+.next:hover {
+  background-color: var(--secondary-color);
+  color: var(--white-color);
+}
+
+.previous:disabled,
+.next:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+
+/* hide the previous button when it's disabled */
+.previous:disabled {
+  visibility: hidden;
+}
+
+
+/*Author & Publisher List page end*/
+
+/*School set page start*/
+
+.product-details {
+  background-color: var(--white-color);
+  border: 1px solid #E2DCDC;
+  color: #000000;
+  padding: 10px 15px 0px 15px;
+  width: fit-content;
+  border-radius: 5px;
+}
+
+h4.start {
+  display: inline-block;
+}
+
+i.start {
+  display: inline-block;
+}
+
+p.start {
+  display: inline;
+}
+
+
+/*School set page end*/
+
+/*School set details page start*/
+
+ul.icon-inline {
+  display: flex;
+  align-items: center;
+}
+
+.icon-inline i{
+  font-size: 15px;
+  color: #ec8b2d;
+}
+
+.icon-inline p{
+  font-size: 15px;
+}
+
+.ml-5 {
+  margin-left: 5px;
+}
+
+.ml-15 {
+  margin-left: 15px;
+}
+
+.mr-5 {
+  margin-right: 5px;
+}
+
+ul.icon-inline p {
+  margin-bottom: 0;
+}
+
+.alert-success {
+  color: #396110;
+  background-color: #e2f1d2;
+  border-color: #d6ecc0;
+}
+
+.alert {
+  position: relative;
+  padding: 0.75rem 1.25rem;
+  margin-bottom: 1rem;
+  border: 1px solid transparent;
+  border-radius: 8px;
+}
+
+.display-inline{
+    display: flex;
+    align-items: center;
+}
+
+.school-set-details .product-quality {
+  width: 90px !important;
+  overflow: hidden;
+  position: relative;
+  border: 1px solid #e8e8e8;
+  margin-right: 20px;
+}
+
+.school-set-details .product-quality > input {
+  width: 90px !important;
+  border: none;
+  height: 45px;
+  line-height: 50px;
+  text-align: center;
+  font-size: 14px;
+  color: #8f8f8f;
+  padding: 0;
+  font-family: "Jost", sans-serif;
+}
+
+tr.school-set-bg {
+  background-color: #F4F4F4 !important;
+}
+
+.table-gap table.table.table-striped.table-borderless.font-size-2 {
+  border-collapse: separate;
+  border-spacing: 0 5px;
+}
+
+.school-set-bg td {
+  vertical-align: middle;
+}
+
+/*School set details page end*/
+
