@@ -12105,6 +12105,7 @@ img.rounded-circle.authorimg {
   }
   }
 
+
 .outofstock{
   pointer-events: none;
 }
@@ -12397,3 +12398,13 @@ img.book-icon {
   max-width: 10%;
 }
 /*School set defalt end*/
+
+.login-register-form input {
+  background-color: transparent;
+  border: 1px solid #ebebeb;
+  font-size: 15px;
+  height: 50px;
+  padding: 0 15px;
+  color: #000000;
+  width: 100%;
+}
