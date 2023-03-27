@@ -12378,7 +12378,7 @@ h5.about-start-next {
 .school-set-details{
   background-color: #F3F3F3;
     border: 1px solid #ffffff;
-    padding: 15px 15px 0px 20px;
+    padding: 15px 15px 0px 15px;
     border-radius: 5px;
 }
 
@@ -12394,6 +12394,16 @@ button.school-set-button {
 }
 
 img.book-icon {
-  max-width: 10%;
+  width: 55px;
+  margin-top: -5px;
+}
+
+.school-set-bottom-details {
+  display: flex;
+  justify-content: space-between;
+}
+
+.school-set-details.mb-5 {
+  margin-bottom: 5px !important;
 }
 /*School set defalt end*/
