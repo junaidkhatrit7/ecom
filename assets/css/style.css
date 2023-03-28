@@ -12376,14 +12376,14 @@ h5.about-start-next {
   color: var(--primary-color);
 }
 
-.school-set-details{
+.school-set-details-new{
   background-color: #F3F3F3;
     border: 1px solid #ffffff;
     padding: 15px 15px 0px 15px;
     border-radius: 5px;
 }
 
-strong.txt-clr {
+.txt-clr {
   color: var(--primary-color);
 }
 
@@ -12404,10 +12404,80 @@ img.book-icon {
   justify-content: space-between;
 }
 
-.school-set-details.mb-5 {
+.mb-5 {
   margin-bottom: 5px !important;
 }
 /*School set defalt end*/
+
+/*School set details defalt start*/
+
+.p-bigfont p{
+  font-size: 16px;
+}
+
+img.school-set-img-new {
+  width: 27%;
+}
+
+.school-set-cart{
+  background-color: #F3F3F3;
+  border: 1px solid #ffffff;
+  padding: 30px 30px 15px 30px;
+  border-radius: 5px;
+  height: fit-content;
+}
+
+.school-set-details-right {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.details-cart .single-product-cart a {
+  width: 120px !important;
+  font-size: 12px;
+  padding: 14px 10px;
+  text-align: center;
+  margin-right: 5px;
+  margin: unset !important;
+}
+
+.details-cart .single-product-cart {
+  margin: unset !important;
+}
+
+.details-cart .single-product-cart {
+  margin-left: 5px !important;
+}
+
+.product-quality.new-cart {
+  width: 90px;
+  margin-right: 0px;
+
+}
+
+.product-quality.new-cart > input {
+  width: 90px;
+
+}
+
+table.table-striped.table-borderless.font-size-2 {
+  border-collapse: separate;
+  border-spacing: 0 5px;
+  width: 100%;
+}
+
+.school-table-border td {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #9D9D9D !important;
+}
+
+.p-bigfont th{
+  font-size: 16px;
+}
+
+/*School set details defalt end*/
+
 
 .login-register-form input {
   background-color: transparent;
@@ -12418,3 +12488,4 @@ img.book-icon {
   color: #000000;
   width: 100%;
 }
+
