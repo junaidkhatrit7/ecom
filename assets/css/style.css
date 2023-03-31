@@ -12334,9 +12334,9 @@ tr.school-set-bg {
   }
   
   input.input-text.qty-new.text {
-    width: 90px !important;
+    width: 65px !important;
     border: none;
-    height: 45px;
+    height: 35px;
     line-height: 50px;
     text-align: center;
     font-size: 14px;
@@ -12423,7 +12423,7 @@ img.school-set-img-new {
   background-color: #F3F3F3;
   border: 1px solid #ffffff;
   padding: 30px 30px 15px 30px;
-  border-radius: 5px;
+  border-radius: 10px;
   height: fit-content;
 }
 
@@ -12486,6 +12486,10 @@ tr.p-bigfont th:nth-child(2) {
   padding-left: 1em;
   padding-right: 1em;
   width: 68%;
+}
+
+.product-quality-new input.input-text.qty-new.text {
+  border: 1px solid #e8e8e8;
 }
 
 /*School set details defalt end*/
