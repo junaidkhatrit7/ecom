@@ -12492,6 +12492,11 @@ tr.p-bigfont th:nth-child(2) {
   border: 1px solid #e8e8e8;
 }
 
+input.check-color {
+  pointer-events: none;
+}
+
+
 /*School set details defalt end*/
 
 
