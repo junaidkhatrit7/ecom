@@ -12090,7 +12090,7 @@ span.new-price.bold {
 
 /* author & Publiher page start*/
 
-img.rounded-circle.authorimg {
+img.authorimg {
   height: 200px;
 }
 
@@ -12169,7 +12169,7 @@ img.rounded-circle.authorimg {
   margin: 5px !important;
 }
 
-img.rounded-circle.author-list-img {
+img.author-list-img {
   height: 177px;
 }
 
