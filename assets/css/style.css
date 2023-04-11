@@ -1163,8 +1163,7 @@ textarea {
 
 @media only screen and (max-width: 767px) {
   .header-action-wrap .logintitle {
-    font-size: 10px;
-    font-weight: bold;
+    display: none;
   }
 }
 
