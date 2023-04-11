@@ -12209,7 +12209,7 @@ img.author-list-img {
 .previous,
 .next {
   padding: 10px 15px;
-  border: 1px solid var(--secondary-color);
+  border: 0px solid var(--secondary-color);
   border-radius: 4px;
   cursor: pointer;
 }
