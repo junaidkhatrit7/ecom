@@ -1382,6 +1382,12 @@ span.logintitle {
   }
 }
 
+@media screen and (min-width: 800px){
+  .mobile-search {
+    display: none;
+}
+}
+
 .serchform form {
   position: relative;
   overflow: hidden;
@@ -12601,7 +12607,7 @@ input.check-color {
 
 /*Mobile Bottom Menu Start*/
 
-@media screen and (min-width: 1024px){
+@media screen and (min-width: 800px){
   .nav__menu {
     display: none;
   }
