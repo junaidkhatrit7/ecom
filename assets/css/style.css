@@ -12399,6 +12399,7 @@ img.book-icon {
 }
 /*School set defalt end*/
 
+/* reset password page */
 .login-register-form input {
   background-color: transparent;
   border: 1px solid #ebebeb;
@@ -12407,4 +12408,12 @@ img.book-icon {
   padding: 0 15px;
   color: #000000;
   width: 100%;
+}
+/*---------*/
+
+
+
+.border-right {
+  border-right: 1px solid #EAE8E4 !important;
+  padding: 5px;
 }
