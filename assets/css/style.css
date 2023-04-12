@@ -12386,7 +12386,14 @@ tr.school-set-bg {
 
 /*School set defalt start*/
 
-.col-lg-8.pr-80 {
+@media only screen and (max-width: 767px) {
+  .pr-80 {
+    padding-right: 15px !important;
+    padding-bottom: 15px !important;
+  }
+}
+
+.pr-80 {
   padding-right: 80px;
 }
 
@@ -12424,6 +12431,13 @@ button.school-set-button {
   border: 0px;
   color: var(--white-color);
   pointer-events: none;
+}
+
+@media only screen and (max-width: 767px) {
+  img.book-icon {
+    margin-top: 0px !important;
+    margin-right: -10px !important;
+  }
 }
 
 img.book-icon {
