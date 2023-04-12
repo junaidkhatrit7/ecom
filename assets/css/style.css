@@ -5699,7 +5699,7 @@ span.logintitle {
     -webkit-box-pack: center;
     -webkit-justify-content: center;
         -ms-flex-pack: center;
-            justify-content: center;
+            justify-content: left;
   }
 }
 
@@ -12457,6 +12457,13 @@ img.book-icon {
 
 /*School set details defalt start*/
 
+
+@media only screen and (max-width: 767px) {
+  .p-bigfont p{
+    font-size: 14px !important;
+  }
+}
+
 .p-bigfont p{
   font-size: 16px;
 }
@@ -12473,9 +12480,19 @@ img.school-set-img-new {
   height: fit-content;
 }
 
-.school-set-details-right {
-  display: flex;
-  justify-content: flex-end;
+@media screen and (min-width: 800px){
+  .school-set-details-right {
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .column-flex {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-bottom: -15px !important;
+}
 }
 
 .details-cart .single-product-cart a {
