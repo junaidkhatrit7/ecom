@@ -136,77 +136,292 @@
 
 	
 	
-	<!--'Sign Up Error' Page Start-->			
 
-
-<body>
-   	
-								                      
-            <div class="login-register-area pb-100 pt-95">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-8 col-md-12 offset-lg-2">
-                            <div class="login-register-wrapper">
-                                <div class="login-register-tab-list nav">
-                                   </div>
-                                    <div id="lg2" class="tab-pane">
-                                        <div class="login-form-container">
-                                            <div class="login-register-form">
-                                                <h3>Create Account</h3><br>
-                                                <div data-dismiss="alert" class="alert alert-danger clickable">
-                                                    <h2>Error</h2>
-                                                    <ul>
-                                                            <li>Password don't match</li>
-                                                    </ul>
+	<!--'Cart' Page Start-->			
+			
+    <div class="checkout-main-area pb-100 pt-100" data-select2-id="select2-data-16-00we">
+        <div class="container" data-select2-id="select2-data-15-o85d">
+            <div class="customer-zone mb-20">
+                <p class="cart-page-title">Returning customer? <a class="checkout-click1" href="#">Click here to login</a></p>
+                <div class="checkout-login-info">
+                    <p>If you have shopped with us before, please enter your details in the boxes below. If you are a new customer, please proceed to the Billing &amp; Shipping section.</p>
+                    <form action="#">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6">
+                                <div class="sin-checkout-login">
+                                    <label>Username or email address <span>*</span></label>
+                                    <input type="text" name="user-name">
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6">
+                                <div class="sin-checkout-login">
+                                    <label>Passwords <span>*</span></label>
+                                    <input type="password" name="user-password">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="button-remember-wrap">
+                            <button class="button" type="submit">Login</button>
+                            <div class="checkout-login-toggle-btn">
+                                <input type="checkbox">
+                                <label>Remember me</label>
+                            </div>
+                        </div>
+                        <div class="lost-password">
+                            <a href="#">Lost your password?</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="customer-zone mb-20">
+                <p class="cart-page-title">Have a coupon? <a class="checkout-click3" href="#">Click here to enter your code</a></p>
+                <div class="checkout-login-info3">
+                    <form action="#">
+                        <input type="text" placeholder="Coupon code">
+                        <input type="submit" value="Apply Coupon">
+                    </form>
+                </div>
+            </div>
+            <div class="checkout-wrap pt-30" data-select2-id="select2-data-14-sju2">
+                <div class="row" data-select2-id="select2-data-13-pi4k">
+                    <div class="col-lg-7" data-select2-id="select2-data-12-fs7j">
+                        <div class="billing-info-wrap" data-select2-id="select2-data-11-v8rj">
+                            <h3>Billing Details</h3>
+                            <div class="row" data-select2-id="select2-data-10-1v4f">
+                                <div class="col-lg-6 col-md-6">
+                                    <div class="billing-info mb-20">
+                                        <label>First Name <abbr class="required" title="required">*</abbr></label>
+                                        <input type="text">
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6">
+                                    <div class="billing-info mb-20">
+                                        <label>Last Name <abbr class="required" title="required">*</abbr></label>
+                                        <input type="text">
+                                    </div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <div class="billing-info mb-20">
+                                        <label>Company Name <abbr class="required" title="required">*</abbr></label>
+                                        <input type="text">
+                                    </div>
+                                </div>
+                                <label>Country</label>
+                                <div class="select-style mb-15">
+                                    <select class="select-two-active">
+                                        <option>Bangladesh</option>
+                                        <option>India</option>
+                                        <option>United Kingdome</option>
+                                        <option>Russia</option>
+                                        <option>Africa</option>
+                                    </select>
+                                </div>
+                                
+                                <div class="col-lg-12">
+                                    <div class="billing-info mb-20">
+                                        <label>Street Address <abbr class="required" title="required">*</abbr></label>
+                                        <input class="billing-address" placeholder="House number and street name" type="text">
+                                        <input placeholder="Apartment, suite, unit etc." type="text">
+                                    </div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <div class="billing-info mb-20">
+                                        <label>Town / City <abbr class="required" title="required">*</abbr></label>
+                                        <input type="text">
+                                    </div>
+                                </div>
+                                <div class="col-lg-12 col-md-12">
+                                    <div class="billing-info mb-20">
+                                        <label>State / County <abbr class="required" title="required">*</abbr></label>
+                                        <input type="text">
+                                    </div>
+                                </div>
+                                <div class="col-lg-12 col-md-12">
+                                    <div class="billing-info mb-20">
+                                        <label>Postcode / ZIP <abbr class="required" title="required">*</abbr></label>
+                                        <input type="text">
+                                    </div>
+                                </div>
+                                <div class="col-lg-12 col-md-12">
+                                    <div class="billing-info mb-20">
+                                        <label>Phone <abbr class="required" title="required">*</abbr></label>
+                                        <input type="text">
+                                    </div>
+                                </div>
+                                <div class="col-lg-12 col-md-12">
+                                    <div class="billing-info mb-20">
+                                        <label>Email Address <abbr class="required" title="required">*</abbr></label>
+                                        <input type="text">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="checkout-account mb-25">
+                                <input class="checkout-toggle2" type="checkbox">
+                                <span>Create an account?</span>
+                            </div>
+                            <div class="checkout-account-toggle open-toggle2 mb-30">
+                                <label>Email Address</label>
+                                <input placeholder="Password" type="password">
+                            </div>
+                            <div class="checkout-account mt-25">
+                                <input class="checkout-toggle" type="checkbox">
+                                <span>Ship to a different address?</span>
+                            </div>
+                            <div class="different-address open-toggle mt-30">
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-6">
+                                        <div class="billing-info mb-20">
+                                            <label>First Name</label>
+                                            <input type="text">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6">
+                                        <div class="billing-info mb-20">
+                                            <label>Last Name</label>
+                                            <input type="text">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <div class="billing-info mb-20">
+                                            <label>Company Name</label>
+                                            <input type="text">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <div class="billing-select select-style mb-20">
+                                            <label>Country</label>
+                                                <div class="select-style mb-15">
+                                                    <select class="select-two-active">
+                                                        <option>Bangladesh</option>
+                                                        <option>India</option>
+                                                        <option>United Kingdome</option>
+                                                        <option>Russia</option>
+                                                        <option>Africa</option>
+                                                    </select>
                                                 </div>
-                                                <form action="#" method="post">
-                                                    <label for="username">Username*</label>
-                                                    <input type="text" name="user-name">
-                                                    <label for="Phone">Phone*</label>
-                                                    <input name="user-email" type="phone">
-                                                    <label for="username">Email*</label>
-                                                    <input name="user-email" type="email" placeholder="abc123@gmail.com ">
-                                                    <label for="username">Password*</label>
-                                                    <input type="password" name="user-password">
-                                                    <label for="username">Confirm Password*</label>
-                                                    <input type="password" name="user-password" >
-                                                    <div class="textcolor">
-                                                        <p>By Continuing, you agree to the <a href="#"">Terms of Use</a> and <a href="#"">Privacy policy</a></p>
-                                                    </div>
-                                                    <div class="button-box btn-hover">
-                                                        <button type="submit">Sign Up</button><br><br>
-                                                        <div class="alert alert-info p-4">
-                                                            <h4>Note</h4>
-                                                            <p class="mb-0">
-                                                                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                                                                </p><hr>
-                                                                <small>
-                                                                    Lorem Ipsum is simply dummy text.
-                                                                </small>
-                                                            <p></p>
-                                                        </div>
-                   
-                                                        <p>Already have an Account?</p>
-                                                        <button type="submit"> Login </button>
-                                                    </div>
-                                                </form>
-                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <div class="billing-info mb-20">
+                                            <label>Street Address</label>
+                                            <input class="billing-address" placeholder="House number and street name" type="text">
+                                            <input placeholder="Apartment, suite, unit etc." type="text">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <div class="billing-info mb-20">
+                                            <label>Town / City</label>
+                                            <input type="text">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6">
+                                        <div class="billing-info mb-20">
+                                            <label>State / County</label>
+                                            <input type="text">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6">
+                                        <div class="billing-info mb-20">
+                                            <label>Postcode / ZIP</label>
+                                            <input type="text">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6">
+                                        <div class="billing-info mb-20">
+                                            <label>Phone</label>
+                                            <input type="text">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6">
+                                        <div class="billing-info mb-20">
+                                            <label>Email Address</label>
+                                            <input type="text">
                                         </div>
                                     </div>
                                 </div>
                             </div>
+                            <div class="additional-info-wrap">
+                                <label>Order notes</label>
+                                <textarea placeholder="Notes about your order, e.g. special notes for delivery. " name="message" style="height: 28px;"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="your-order-area">
+                            <h3>Your order</h3>
+                            <div class="your-order-wrap gray-bg-4">
+                                <div class="your-order-info-wrap">
+                                    <div class="your-order-info">
+                                        <ul>
+                                            <li>Product <span>Total</span></li>
+                                        </ul>
+                                    </div>
+                                    <div class="your-order-middle">
+                                        <ul>
+                                            <li>Product Name X 1 <span>$0 </span></li>
+                                            <li>Product Name X 1 <span>$0 </span></li>
+                                        </ul>
+                                    </div>
+                                    <div class="your-order-info order-subtotal">
+                                        <ul>
+                                            <li>Subtotal <span>0 </span></li>
+                                        </ul>
+                                    </div>
+                                    <div class="your-order-info order-shipping">
+                                        <ul>
+                                            <li>Shipping <p>Enter your full address </p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="your-order-info order-total">
+                                        <ul>
+                                            <li>Total <span>$0 </span></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="payment-method">
+                                    <div class="pay-top sin-payment">
+                                        <input id="payment_method_1" class="input-radio" type="radio" value="cheque" checked="checked" name="payment_method">
+                                        <label for="payment_method_1"> Direct Bank Transfer </label>
+                                        <div class="payment-box payment_method_bacs" style="display: block;">
+                                            <p>Make your payment directly into our bank account. Please use your Order ID as the payment reference.</p>
+                                        </div>
+                                    </div>
+                                    <div class="pay-top sin-payment">
+                                        <input id="payment-method-2" class="input-radio" type="radio" value="cheque" name="payment_method">
+                                        <label for="payment-method-2">Check payments</label>
+                                        <div class="payment-box payment_method_bacs">
+                                            <p>Make your payment directly into our bank account. Please use your Order ID as the payment reference.</p>
+                                        </div>
+                                    </div>
+                                    <div class="pay-top sin-payment">
+                                        <input id="payment-method-3" class="input-radio" type="radio" value="cheque" name="payment_method">
+                                        <label for="payment-method-3">Cash on delivery </label>
+                                        <div class="payment-box payment_method_bacs">
+                                            <p>Make your payment directly into our bank account. Please use your Order ID as the payment reference.</p>
+                                        </div>
+                                    </div>
+                                    <div class="pay-top sin-payment sin-payment-3">
+                                        <input id="payment-method-4" class="input-radio" type="radio" value="cheque" name="payment_method">
+                                        <label for="payment-method-4">PayPal <img alt="" src="assets/images/icon-img/payment.png"><a href="#">What is PayPal?</a></label>
+                                        <div class="payment-box payment_method_bacs">
+                                            <p>Make your payment directly into our bank account. Please use your Order ID as the payment reference.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="Place-order btn-hover">
+                                <a href="#">Place Order</a>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>					
+            </div>
+        </div>
+    </div>
 
-
-
-	<!--'Sign Up Error' Page End-->					
-								
-									
-								
-					
+    <!--'cart' Page End-->	
+		
  <!--Footer Start-->
  <footer class="footer-area">
     <div class="bg-gray-2">

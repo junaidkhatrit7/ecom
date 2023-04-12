@@ -139,13 +139,11 @@
 	<!--'Login-Sign Up' Page Start-->			
 
 
-<body>
-   	
-								                      
-            <div class="login-register-area pb-100 pt-95">
+<body>						                      
+            <div class="login-register-area pb-40 pt-70">
                 <div class="container">
                     <div class="row">
-                        <div class="col-lg-8 col-md-12 offset-lg-2">
+                        <div class="class=col-lg-7 col-md-8 offset-lg-3">
                             <div class="login-register-wrapper">
                                 <div class="login-register-tab-list nav">
                                     <a class="active" data-bs-toggle="tab" href="#lg1">
@@ -161,16 +159,16 @@
                                             <div class="login-register-form">
                                                 <form action="#" method="post">
                                                     <label for="username">Email or Phone*</label>
-                                                    <input type="text" name="Email or phone">
+                                                    <input type="text" name="Email or phone" placeholder="email or phone">
                                                     <label for="username">Password*</label>
-                                                    <input type="password" name="user-password" >
+                                                    <input type="password" name="user-password" placeholder="password" >
                                                     <div class="textcolor">
                                                             <p>By Continuing, you agree to the <a href="#"">Terms of Use</a> and <a href="#"">Privacy policy</a></p>
                                                     </div>
                                                     <div class="login-toggle-btn">
                                                         <input type="checkbox">
                                                         <label>Remember me</label>
-                                                        <a href="#"><u>Forgot Password?</u></a><br><br>
+                                                        <a href="#"><u>Forgot Password?</u></a><br>
                                                         <a href="#"><u>Resend Varification</u></a>
                                                     </div>
                                                     <div class="button-box btn-hover">
@@ -183,36 +181,49 @@
                                     <div id="lg2" class="tab-pane">
                                         <div class="login-form-container">
                                             <div class="login-register-form">
-                                                <h3>Create Account</h3><br>
+                                                <h3>Create Account</h3>
                                                 <form action="#" method="post">
-                                                    <label for="username">Username*</label>
-                                                    <input type="text" name="user-name">
-                                                    <label for="Phone">Phone*</label>
-                                                    <input name="user-email" type="phone">
-                                                    <label for="username">Email*</label>
+                                        <div class="row">
+                                            <div class="col-md-6 mb-4">
+                                                <label for="username">Username*</label>
+                                                    <input type="text" name="user-name" placeholder="username" >
+                                            </div>
+                                            <div class="col-md-6 mb-4">
+                                                <label for="Phone">Phone*</label>
+                                                    <input name="user-email" type="phone" placeholder="number">
+                                            </div>
+                                            <div class="col-md-12 mb-4">
+                                                <label for="username">Email*</label>
                                                     <input name="user-email" type="email" placeholder="abc123@gmail.com ">
-                                                    <label for="username">Password*</label>
-                                                    <input type="password" name="user-password">
-                                                    <label for="username">Confirm Password*</label>
+                                            </div>
+                                            <div class="col-md-6 mb-4">
+                                                <label for="username">Password*</label>
+                                                    <input type="password" name="user-password" placeholder="password">
+                                            </div>
+                                            <div class="col-md-6 mb-4">
+                                                <label for="username">Confirm Password*</label>
                                                     <input type="password" name="user-password" >
+                                            </div>
+                                        </div>
                                                     <div class="textcolor">
                                                         <p>By Continuing, you agree to the <a href="#"">Terms of Use</a> and <a href="#"">Privacy policy</a></p>
                                                     </div>
-                                                    <div class="button-box btn-hover">
-                                                        <button type="submit">Sign Up</button><br><br>
-                                                        <div class="alert alert-info p-4">
-                                                            <h4>Note</h4>
-                                                            <p class="mb-0">
-                                                                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                                                                </p><hr>
-                                                                <small>
-                                                                    Lorem Ipsum is simply dummy text.
-                                                                </small>
-                                                            <p></p>
+                                                        <div class="button-box btn-hover">
+                                                            <button type="submit">Sign Up</button>
+                                                            <!-- <div class="alert alert-info p-4">
+                                                                <h4>Note</h4>
+                                                                <p class="mb-0">
+                                                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                                                    </p><hr>
+                                                                    <small>
+                                                                        Lorem Ipsum is simply dummy text.
+                                                                    </small>
+                                                                        <p></p>
+                                                                    </div> -->
+                                                        <div class="button">
+                                                            <p>Already have an Account?</p>
+                                                            <button type="submit"> Login </button>
                                                         </div>
-                   
-                                                        <p>Already have an Account?</p>
-                                                        <button type="submit"> Login </button>
                                                     </div>
                                                 </form>
                                             </div>
