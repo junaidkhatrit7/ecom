@@ -9513,9 +9513,10 @@ span.new-price.bold {
 
 @media only screen and (max-width: 767px) {
   .shop-topbar-wrapper {
-    display: block;
+    display: flex;
     text-align: center;
-  }
+    align-items: center;
+}
 }
 
 @media only screen and (min-width: 576px) and (max-width: 767px) {
@@ -9547,7 +9548,7 @@ span.new-price.bold {
     -webkit-justify-content: center;
         -ms-flex-pack: center;
             justify-content: center;
-    margin-top: 15px;
+    /* margin-top: 15px; */
   }
 }
 
