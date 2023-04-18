@@ -12735,3 +12735,15 @@ ul {
     margin-right: 15px !important;
   }
 }
+
+@media only screen and (max-width: 767px) {
+  .only-desktop {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 800px){
+  .only-mobile {
+    display: none;
+}
+}
