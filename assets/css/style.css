@@ -12760,10 +12760,11 @@ ul {
     justify-content: space-around;
   }
 
-  i.pe-7s-menu {
+  i.fa.fa-bars {
     background-color: black;
     color: white;
     border-radius: 5px;
     padding: 5px;
+    font-size: 15px;
 }
 }
