@@ -42,7 +42,47 @@
     <link rel="stylesheet" href="assets/css/plugins/slinky.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+            
+        /* Shipping Pages */
+    
+            p.getmyooks02 {
+            font-weight: bold !important; 
+            font-size: 16px !important; 
+            margin-bottom: 0px !important;
+            }
+            h4.billing-address {
+            margin-top: 20px;
+            }
+            .collection-point {
+            display: flex;
+            flex-direction: row-reverse;
+                line-height: inherit;
+                text-decoration: none;
+                cursor: pointer;
+                color: #EC8B2D;
+            }
+            .collection-point a {
+            font-size: 17px;
+            }
+            p.getmyooks03 {
+            font-weight: bold;
+            font-size: 16px;
+            margin-bottom: 15px;
+            }
+            span.default-address {
+            font-size: small;
+            }
+            .shipping-border.shipping-flex {
+            margin-bottom: 15px;
+            }
+    
+            /*------*/
+        </style>
 </head>
+
+
 
 <body>
     <div class="main-wrapper main-wrapper-2">
@@ -71,7 +111,7 @@
                                     <ol class="checkout-steps list-unstyled mb-0">
                                         <li class="step active">
                                             <a href="#">
-                                                <p><i class='far fa-clipboard'></i> Cart </p>
+                                                <p><i class='far fa-clipboard'></i></i> Cart </p>
                                             </a>
                                         </li>
                                         <li class="divider"></li>
@@ -106,82 +146,124 @@
 <body>	
 <hr>
 
-	<!-- 'Cart 9' "Itmeset For Guests" Page Start -->
+	<!--'Shipping 3' "Delivery Options With Both Normal Delivery Options and Collection Points Option" Page Start-->
 
     <div class="container pt-3 pb-5">
         <div class="row">
             <div class="col-lg-7">
-                <div class="your-cart-items">
-                    <h4>Your cart: 1 item(s)</h4>     
-                </div>
-                    <div class="shipping-border shipping-flex"><a href="#"><img src="33676970_1.jpg" width="127"></a>
-                        <div class="col-md-9 getmybook-loop-product__thumbnail mb-3 mb-lg-0">
-                                <a class="cross-1" href="#">×</a>
-                                <h4 class="getmybook-loop-product__title product__title h6 text-lh-md mb-1 crop-text-2 h-dark secondary-font"><a href="#">Hutchison's Clinical Methods : An Integrated Approach To Clinical Practice</a></h4>
-                            <div class="font-weight-medium">
-                                <span>Class: class 11</span>
-                                    <p class="font-weight-medium">2nd language:</p>
-                                    <p class="font-weight-medium"></p>
-                                <span class="Number-items">
-                                    <a href="No. of items:21">No. of items:21</a>
-                                    <i class='fas fa-angle-down'></i>
-                                </span>
+                <h4>Deliver to</h4>
+                    <div class="shipping-border mb-3">
+                        <p class="font-size-2 mb-2 font-weight-bold"><span><strong>admin admin</strong></span> <span>Default address</span></p>
+                        <p class="crop-text-1 mb-0 font-size-1 cart-address">lorem inspum - 01234</p>
+                        <p class="crop-text-1 mb-0 font-size-1 cart-address">9876543210</p>
+                            <div class="single-product-cart btn-hover Change-address">
+                                <a href="#">Change Address</a>
                             </div>
-                                <div class="product-quality"><div class="dec qtybutton">-</div>
-                                    <input class="cart-plus-minus-box input-text qty text" name="qtybutton" value="1">
-                                    <div class="inc qtybutton">+</div>
+                    </div>   
+
+                <div class="your-cart-items">
+                    <div class="your-cart-items">
+                        <h4>Delivery Options</h4>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                    <label class="form-check-label" for="flexRadioDefault1">
+                                        <p class="getmyooks02">GetMyBooks Recommendation</p>
+                                    </label>
+                                        <p>₹152 | Expected arrival by Apr 25, 2023</p>
+                            </div>     
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                        <label class="form-check-label" for="flexRadioDefault1">
+                                            <p class="getmyooks02">Cheapest</p>
+                                        </label>
+                                            <p>₹152 | Expected arrival by Apr 25, 2023</p> 
                                 </div>
-                                    <div>
-                                        <span class="getmybook-Price-amount amount"><span>₹</span>1,466.50</span>
-                                        <del>
-                                            <span><span>₹</span>2,095.00</span>
-                                        </del>
-                                    </div>
-                                        <span>30.00% off</span>
-                                        <div>
-                                            <p><i class="#"></i><strong>Delivers Between</strong></p>
-                                        </div>
-                        </div>                   
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                            <label class="form-check-label" for="flexRadioDefault1">
+                                                <p class="getmyooks02">Fastest</p>
+                                            </label>
+                                                <p>₹152 | Expected arrival by Apr 25, 2023</p> 
+                                    </div>  
                     </div>
+                        <div class="form-check">
+                            <div>
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                <label class="form-check-label" for="flexRadioDefault1"> 
+                                    <p class="getmyooks02">Choose a collection point  <i class='fas fa-exclamation-circle' style='font-size:18px;color:#ed5757'></i></p>
+                                    <div>
+                                        <p class="getmyooks02">Collect your product point</p>
+                                    </div>
+                                    <p class="getmyooks02"><i class='fas fa-map-marker-alt'></i> Vijaynagar shishu</p>
+                                </label> 
+                                    <div class="collection-point">
+                                        <p><a href="#">Change collection point</a></p>
+                                    </div>    
+                            </div>       
+                        </div>
+                </div>
+                                    <h4 class="billing-address">Billing Address</h4>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                            <label class="form-check-label" for="flexCheckDefault">
+                                                <p class="getmyooks02">Set billing address same as delivery address</p>
+                                            </label>
+                                        </div>
+                                            <div>
+                                                <div class="col-md-9 getmybook-loop-product__thumbnail mb-3 mb-lg-0">
+                                                </div>                   
+                                            </div>
             </div>
 
             <div class="col-lg-5">
                 <div class="sticky-sidebar overflow-hidden" style="top: 125px;">
                     <div id="cartAccordion" class="border rounded bg-white mb-5">
+    
                         <div class="p-3 border-bottom">
                             <div class="cart-head">
                                 <h3 class="cart-title mb-0 font-weight-medium font-size-3">Price Details</h3>
                             </div>
-    
-                            <div class="mt-3 cart-content" id="ls-cart-price-details" data-cart-total="2095.00" data-discount-amount="628.50" data-shipping-rate="0.00">
-                                <table class="shop_table shop_table_responsive">
-                                    <tbody>
-                                        <tr class="cart-subtotal">
-                                            <th>Total @ MRP</th>
-                                            <td data-title="Subtotal">
-                                                <span class="getmybook-Price-amount amount secondary-font font-size-3">
-                                                    <span class="getmybook-Price-currencySymbol">₹</span>
-                                                     0
-                                                </span>
-                                            </td>
-                                        </tr>
-    
-                                        <tr class="order-shipping">
-                                            <th>Total Discount</th>
-                                            <td data-title="discount">
-                                                <span class="text-green getmybook-Price-amount amount secondary-font font-size-3">
-                                                    <span class="getmybook-Price-currencySymbol">-₹</span>
-                                                    <span> 0</span>
-                                                </span>
-                                            </td>
-                                        </tr>
-                                            <tr id="is-shippingcharges-available" class="order-shipping">
-                                                <th>Shipping</th>
-                                                <td data-title="Shipping"><span class="getmybook-Price-amount amount secondary-font font-size-3">₹<span id="ls-cart-shipping-charge">0</span></span></td>
+                                <div class="mt-3 cart-content" id="ls-cart-price-details" data-cart-total="2095.00" data-discount-amount="628.50" data-shipping-rate="0.00">
+                                    <table class="shop_table shop_table_responsive">
+                                        <tbody>
+                                            <tr class="cart-subtotal">
+                                                <th>Total @ MRP</th>
+                                                <td data-title="Subtotal">
+                                                    <span class="getmybook-Price-amount amount secondary-font font-size-3">
+                                                        <span class="getmybook-Price-currencySymbol">₹</span>
+                                                        0
+                                                    </span>
+                                                </td>
                                             </tr>
-                                    </tbody>
-                                </table>
-                            </div>
+        
+                                            <tr class="order-shipping">
+                                                <th>Total Discount</th>
+                                                <td data-title="discount">
+                                                    <span class="text-green getmybook-Price-amount amount secondary-font font-size-3">
+                                                        <span class="getmybook-Price-currencySymbol">-₹</span>
+                                                        <span> 0</span>
+                                                    </span>
+                                                </td>
+                                            </tr>
+                                                <tr id="is-shippingcharges-available" class="order-shipping">
+                                                    <th>Shipping</th>
+                                                    <td data-title="Shipping"><span class="getmybook-Price-amount amount secondary-font font-size-3">₹<span id="ls-cart-shipping-charge">0</span></span></td>
+                                                </tr>
+                                            <!-- enable roundoff
+                                            <tr class="order-shipping">
+                                                <th>Roundoff</th>
+                                                <td data-title="roundoff">
+                                                    <span class="getmybook-Price-amount amount secondary-font font-size-3">
+                                                        <span id="ls-cart-roundoff-operator" style="display: none">-</span>
+                                                        <span class="getmybook-Price-currencySymbol">₹</span>
+                                                        <span id="ls-cart-roundoff"> 0.00</span>
+                                                    </span>
+                                                </td>
+                                            </tr>
+                                            -->
+                                        </tbody>
+                                    </table>
+                                </div>
                         </div>
     
                         <div class="p-3">
@@ -195,47 +277,22 @@
                             </table>
                         </div>
                     </div>
-                             <div class="codcheck mt-30">
-                            <span>Check Delivery</span>
-                            <div class="serchform mt-10" onsubmit="checkcod()">
-                                <form action="#">
-                                    <input class="border8"placeholder="Enter Pincode" type="text" required>
-                                    <button type="submit" class="button-search">Check</button>
-                                </form>
-                                
+    
+                            <div class="col-md-6">
+                                <div class="d-flex justify-content-end">     
+                                    <div class="single-product-cart reset-update-btn btn-hover">
+                                        <a href="#">Proceed to Payment</a>
+                                    </div>
+                                </div> 
                             </div>
-                            <span id="resultcod"></span>
-                          </div>
-
-                          <div class="p-4 alert alert-info">
-                            <p class="mb-0">
-                                Items usually ship between 1 - 10 days. Login for exact shipment dates and shipping rates.
-                            </p>
-                        </div>
-
-                        <div class="p-4 alert alert-primary">
-                            <h4>
-                                <i class='fas fa-user-alt'></i>
-                                Login to proceed
-                            </h4>
-                            <p class="mb-0">
-                                You have added items to the cart as a guest. If you would like to proceed further, please login to your account
-                                by clicking <a href="#">here</a>.
-                                </p><hr>
-                                <small>
-                                    If you have an existing account, and you already have items in that cart, these items will
-                                    not get transferred to that cart. You will have to re-add these items over there.
-                                </small>
-                            <p></p>
-                        </div>
-
-                        <!-- <div id="shipment-available-for-pincode" style="display:none">
+    
+                    <div id="shipment-available-for-pincode" style="display:none">
                         <br>
                         <div class="p-4 alert alert-danger">
                             <p class="mb-0">
                                 You have selected an address with a pincode that our shipping partner does not recognise. Please select another address
-                            </p> -->
-                        <!-- </div> -->
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -243,10 +300,11 @@
     </div>
     
     
-
+        </div>
+    </div>
 	
 
-    <!--'Cart 9' "Itmeset For Guests" Page End-->	
+    <!--'Shipping 3' "Delivery Options With Both Normal Delivery Options and Collection Points Option" Page End-->	
 		
  <!--Footer Start-->
  <footer class="footer-area">
