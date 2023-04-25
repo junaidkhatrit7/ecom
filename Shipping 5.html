@@ -127,7 +127,7 @@ span.default-address {
         }
 
         input#flexRadioDefault1 {
-        margin: 15px;
+        margin: 6px;
         }
 
         label.form-check-label {
@@ -136,9 +136,6 @@ span.default-address {
         .single-product-cart.reset-update-btn.btn-hover.Change-address {
         margin: 20px 85px 14px 0px !important;
         }
-
-
-        
 		
 		/* Styling for the button that triggers the pop-up */
 		/*.popup-btn {
@@ -158,24 +155,19 @@ span.default-address {
         .btn-hover a:hover{
             color: #fff !important;
         }
+
+        table.shop_table.shop_table_responsive tr {
+            display: flex;
+            justify-content: space-between;
+           }
 	</style>
 </head>
 
 <body>
     <div class="main-wrapper main-wrapper-2">
         <header class="header-area header-responsive-padding header-height-3">
-            <div class="header-top d-none d-lg-block bg-gray">
-                <div class="container">
-                    <div class="row align-items-center">
-                        <div class="col-lg-6 col-6">
-                            
-                        </div>
-                    </div>
-                </div>
-            </div>
             <div class="header-bottom">
                 <div class="container">
-                    
                     <div class="row align-items-center">
                         <div class="col-lg-3 col-md-6 col-6">
                             <div class="logo">
@@ -205,23 +197,17 @@ span.default-address {
                                         </li>
                                     </ol>
                                 </div>
-                                    
-                            
-                                <div class="header-action-style d-block d-lg-none">
-                                    <a class="mobile-menu-active-button" href="#"><i class="pe-7s-menu"></i></a>
-                                </div>
+                                    <div class="header-action-style d-block d-lg-none">
+                                        <a class="mobile-menu-active-button" href="#"><i class="pe-7s-menu"></i></a>
+                                    </div>
                             </div>
                         </div>
-                        
                     </div>
                 </div>
             </div>
-            
         </header>
-
-
 <body>	
-<hr>
+        <hr>
 
 	<!--'Shipping 5' "Change Customer Address" Page Start-->
       
@@ -239,9 +225,8 @@ span.default-address {
                             <a onclick="openPopup()">Change Address</a>
                         </div>
 
-
-                    <!-- Overlay -->
-                    <div class="overlay" id="overlay"></div>
+                            <!-- Overlay -->
+                            <div class="overlay" id="overlay"></div>
         
                     <!-- Pop-up box -->
                     <div class="popup1-addres" id="popup">
@@ -251,7 +236,7 @@ span.default-address {
                                 <h2>Change Delivery Address</h2>
                                 <hr>
                             </div>    
-                                
+
                                 <div class="form-check">
                                     <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
                                         <label class="form-check-label" for="flexRadioDefault1">
@@ -260,7 +245,7 @@ span.default-address {
                                             <p class="crop-text-1 mb-0 font-size-1 cart-address">9876543210</p>
                                         </label>
                                 </div>
-                                <hr>  
+                                    <hr>  
                                 <div class="form-check">
                                     <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
                                         <label class="form-check-label" for="flexRadioDefault1">
@@ -274,12 +259,8 @@ span.default-address {
                                         <a href="#">Change Address</a>
                                     </div>
                                 </div>
-                            
                         </div>
                     </div>
-                        
-                    
-                    
                 </div>   
 
                 <div class="your-cart-items">
@@ -311,13 +292,12 @@ span.default-address {
             <div class="col-lg-5">
                 <div class="sticky-sidebar overflow-hidden" style="top: 125px;">
                     <div id="cartAccordion" class="border rounded bg-white mb-5">
-    
                         <div class="p-3 border-bottom">
                             <div class="cart-head">
                                 <h3 class="cart-title mb-0 font-weight-medium font-size-3">Price Details</h3>
                             </div>
                                 <div class="mt-3 cart-content" id="ls-cart-price-details" data-cart-total="2095.00" data-discount-amount="628.50" data-shipping-rate="0.00">
-                                    <table class="shop_table shop_table_responsive">
+                                    <table class="shop_table col-lg-12 shop_table_responsive">
                                         <tbody>
                                             <tr class="cart-subtotal">
                                                 <th>Total @ MRP</th>
@@ -360,7 +340,7 @@ span.default-address {
                         </div>
     
                         <div class="p-3">
-                            <table class="shop_table shop_table_responsive">
+                            <table class="shop_table col-lg-12 shop_table_responsive">
                                 <tbody>
                                     <tr class="order-total">
                                         <th class="font-weight-medium">Total Amount</th>
@@ -390,18 +370,11 @@ span.default-address {
                 </div>
             </div>
         </div>
-    </div>
-    
-    
-        </div>
-    </div>
-                       
-                       
-                      
-	
+    </div>	
 
     <!--'Cart 6' "Cart With ItemSet For Customerss" Page End-->	
 		
+    
  <!--Footer Start-->
  <footer class="footer-area">
     <div class="bg-gray-2">
