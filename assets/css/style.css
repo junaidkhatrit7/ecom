@@ -171,6 +171,10 @@ button {
   color: black !important;
 }
 
+.header-action-wrap a, button {
+  color: black;
+}
+
 a,
 button,
 img,
@@ -420,6 +424,10 @@ textarea {
 
 .pt-80 {
   padding-top: 15px;
+}
+
+.pt-5 {
+  padding-top: 5px !important;
 }
 
 .pt-15 {
@@ -846,10 +854,10 @@ textarea {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
+  -webkit-box-pack: start;
   -webkit-justify-content: flex-end;
       -ms-flex-pack: end;
-          justify-content: flex-end;
+      justify-content: flex-start;
 }
 
 .language-currency-wrap .border-style {
@@ -2006,7 +2014,7 @@ span.logintitle {
 
 @media only screen and (max-width: 767px) {
   .header-responsive-padding {
-    padding: 20px 0;
+    padding: 0px 0px 20px 0;
   }
 }
 
@@ -5870,6 +5878,17 @@ span.logintitle {
   }
 }
 
+/* @media only screen and (max-width: 767px) {
+  .service-wrap .service-img {
+    width: 80px !important;
+    height: 60px !important;
+    line-height: 60px !important;
+  }
+  .service-wrap .service-img img {
+    max-width: 65% !important;
+  }
+} */
+
 .service-wrap .service-img img {
   max-width: 100%;
   -webkit-transition: all .3s ease 0s;
@@ -7099,7 +7118,7 @@ span.logintitle {
   line-height: 28px;
   font-weight: 300;
   color: #4a4a4a;
-  margin: 23px 0 20px;
+  margin: 23px 0 0px;
 }
 
 @media only screen and (max-width: 767px) {
@@ -12758,6 +12777,7 @@ ul {
   .only-mobile.row.align-items-center {
     display: flex;
     justify-content: space-around;
+    margin-top: 15px;
   }
 
   i.fa.fa-bars {
@@ -12767,4 +12787,15 @@ ul {
     padding: 5px;
     font-size: 15px;
 }
+}
+
+/* sidebar filter start */
+
+@media(max-width: 600px){
+            .offcanvas.offcanvas-start {
+                width: 280px;
+            }
+            .sidebar-wrapper {
+                display: none;
+            }
 }
