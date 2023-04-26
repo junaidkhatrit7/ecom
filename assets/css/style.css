@@ -12793,7 +12793,7 @@ ul {
 
 @media(max-width: 600px){
             .offcanvas.offcanvas-start {
-                width: 280px;
+                width: 280px !important;
             }
             .sidebar-wrapper {
                 display: none;
