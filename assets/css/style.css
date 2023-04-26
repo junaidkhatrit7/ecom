@@ -12791,7 +12791,7 @@ ul {
 
 /* sidebar filter start */
 
-@media(max-width: 600px){
+@media(max-width: 767px){
             .offcanvas.offcanvas-start {
                 width: 280px !important;
             }
