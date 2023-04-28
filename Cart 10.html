@@ -42,48 +42,97 @@
     <link rel="stylesheet" href="assets/css/plugins/slinky.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <style>
-        .login-form-container {
-          margin-right: 0px !important;
-        }
-        .login-register-wrapper .login-form-container {
-            padding: 50px !important;
-        }
-    </style>    
-</head>
 
+    <style>
+		/* Styling for the overlay */
+		.overlay {
+			display: none;
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background-color: rgba(0, 0, 0, 0.5);
+			z-index: 9999;
+		}
+		
+		/* Styling for the pop-up box */
+		.popup1-addres {
+			display: none;
+			position: fixed;
+			top: 32%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			background-color: white;
+			padding: 20px;
+			border-radius: 5px;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+			max-width: 80%;
+			max-height: 80%;
+			overflow: auto;
+			z-index: 10000;
+            width: 440px;
+            height: 400px;
+		}
+		
+		/* Styling for the close button */
+		.popup-close {
+			position: absolute;
+			top: 10px;
+			right: 10px;
+			font-size: 24px;
+			color: #aaa;
+			text-decoration: none;
+			cursor: pointer;
+		}
+
+        .popup-address h2 {
+        font-size: 25px;
+        }
+
+        input#flexRadioDefault1 {
+        margin: 15px;
+        }
+
+        label.form-check-label {
+        margin-bottom: 15px !important;
+        }
+        .single-product-cart.reset-update-btn.btn-hover.Change-address {
+        margin: 20px 85px 14px 0px !important;
+        }
+
+		/* Styling for the button that triggers the pop-up */
+		/*.popup-btn {
+			background-color: #008CBA;
+			color: white;
+			padding: 10px 20px;
+			border-radius: 5px;
+			text-decoration: none;
+			display: inline-block;
+			margin-top: 20px;
+			cursor: pointer;
+		}*/
+
+        .single-product-cart > a {
+           color: #ffffff !important;
+        }
+        .btn-hover a:hover{
+            color: #fff !important;
+        }
+
+
+
+     
+        table.shop_table.shop_table_responsive tr {
+            display: flex;
+            justify-content: space-between;
+           }
+   
+	</style>
+</head>
 <body>
     <div class="main-wrapper main-wrapper-2">
-        <header class="header-area header-responsive-padding header-height-1">
-            <div class="header-top d-none d-lg-block bg-gray">
-                <div class="container">
-                    <div class="row align-items-center">
-                        <div class="col-lg-6 col-6">
-                            <div class="welcome-text">
-                                <p>Default Welcome Msg! </p>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 col-6">
-                            <div class="language-currency-wrap">
-                                <div class="currency-wrap border-style">
-                                    <a class="currency-active" href="#"><i class=" ti-instagram "></i></a>
-                                </div>
-                                <div class="currency-wrap border-style">
-                                    <a class="currency-active" href="#"><i class=" ti-facebook "></i></a>
-                                </div>
-                                <div class="currency-wrap border-style">
-                                    <a class="currency-active" href="#"><i class=" ti-twitter "></i></a>
-                                </div>
-                                <div class="currency-wrap border-style">
-                                    <a class="currency-active" href="#"><i class=" ti-youtube "></i></a>
-                                </div>
-                                
-                           
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <header class="header-area header-responsive-padding header-height-3">
             <div class="header-bottom">
                 <div class="container">
                     <div class="row align-items-center">
@@ -92,26 +141,28 @@
                                 <a href="index.html"><img src="assets/images/logo/logo.png" alt="logo"></a>
                             </div>
                         </div>
-                        <div class="col-lg-6 d-none d-lg-block d-flex justify-content-center">
-                            <div class="serchform">
-                                <form action="#">
-                                    <input placeholder="Search books by Title / Author / Publisher" type="text">
-                                    <button class="button-search"><i class="pe-7s-search"></i></button>
-                                </form>
-                            </div>
-                           
-                        </div>
-                        <div class="col-lg-3 col-md-6 col-6">
+                        <div class="col-lg-8 col-md-6 col-6">
                             <div class="header-action-wrap">
-                                <div class="header-action-style">
-                                    <a title="Login Register" href="#"><i class="pe-7s-user"></i><span class="logintitle">Login / Sign Up</span> </a>
-                                </div>
-                                
-                                <div class="header-action-style header-action-cart">
-                                    <a class="cart-active" href="#"><i class="pe-7s-shopbag"></i>
-                                        <span class="product-count bg-black">02</span>
-                                        
-                                    </a>
+                                <div class="ml-xl-0 ml-md-auto w-r-100 flex-grow-1 mr-md-5 mt-2 mt-md-0 order-1 order-md-0">
+                                    <ol class="checkout-steps list-unstyled mb-0">
+                                        <li class="step active">
+                                            <a href="#">
+                                                <p><i class='far fa-clipboard'></i> Cart </p>
+                                            </a>
+                                        </li>
+                                        <li class="divider"></li>
+                                        <li class="step ">
+                                            <a href="#">
+                                                <p><i class="fa fa-truck"></i>Shipping</p>
+                                            </a>
+                                        </li>
+                                        <li class="divider"></li>
+                                        <li class="step ">
+                                            <a>
+                                                <p><i class='far fa-check-circle'></i>Confirmation</p>
+                                            </a>
+                                        </li>
+                                    </ol>
                                 </div>
                                 <div class="header-action-style d-block d-lg-none">
                                     <a class="mobile-menu-active-button" href="#"><i class="pe-7s-menu"></i></a>
@@ -121,132 +172,182 @@
                     </div>
                 </div>
             </div>
-            <div class="header-mainmenu">
-                <div class="container">
-                    <div class="main-menu">
-                        <nav>
-                            <ul>
-                                <li><a href="#">SHOP BY CATEGORY</a></li>
-                                <li><a href="#">Fiction & Literature</a></li>
-                                <li><a href="#">Indian Writing</a></li>
-                                <li><a href="#">Non-Fiction</a></li>
-                                <li><a href="#">Shop by schools</a></li>
-                            </ul>
-                        </nav>
-                    </div>
-                </div>
-            </div>
         </header>
+<body>	
+        <hr>
 
+	<!--'Cart 10' "Change Address Option When There is atleast Default Address" Page Start-->
+      
+    <div class="container pt-3 pb-5">
+        <div class="row">
+            <div class="col-lg-7">
+                    <h4>Deliver to</h4>
+                <div class="shipping-border mb-3">
+                    <p class="font-size-2 mb-2 font-weight-bold"><span><strong>admin admin</strong></span> <span>Default address</span></p>
+                        <p class="crop-text-1 mb-0 font-size-1 cart-address">lorem inspum - 01234</p>
+                            <p class="crop-text-1 mb-0 font-size-1 cart-address">9876543210</p>
 
-	
-	
-	<!--'Login-Sign Up' Page Start-->			
+                        <!-- Button that triggers the pop-up -->
+                        <div class="single-product-cart btn-hover Change-address">
+                            <a onclick="openPopup()">Change Address</a>
+                        </div>
 
-
-<body>						                      
-            <div class="login-register-area pb-40 pt-70">
-                <div class="container">
-                    <div class="row">
-                        <div class="class=col-lg-6 col-md-6 offset-lg-3">
-                            <div class="login-register-wrapper">
-                                <div class="login-register-tab-list nav">
-                                    <a class="active" data-bs-toggle="tab" href="#lg1">
-                                        <h4> login </h4>
-                                    </a>
-                                    <a data-bs-toggle="tab" href="#lg2">
-                                        <h4> Sign Up </h4>
-                                    </a>
+                            <!-- Overlay -->
+                            <div class="overlay" id="overlay"></div>
+        
+                    <!-- Pop-up box -->
+                    <div class="popup1-addres" id="popup">
+                        <a href="#" class="popup-close" onclick="closePopup()">&times;</a>
+                        <div class="popup-content">
+                            <div class="popup-address">
+                                <h2>Change Delivery Address</h2>
+                                <hr>
+                            </div>     
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                        <label class="form-check-label" for="flexRadioDefault1">
+                                            <p class="font-size-2 mb-2 font-weight-bold"><span><strong>admin admin</strong></span> <span>(Default address)</span></p>
+                                            <p class="crop-text-1 mb-0 font-size-1 cart-address">lorem inspum - 01234</p>
+                                            <p class="crop-text-1 mb-0 font-size-1 cart-address">9876543210</p>
+                                        </label>
                                 </div>
-                                <div class="tab-content">
-                                    <div id="lg1" class="tab-pane active">
-                                        <div class="login-form-container">
-                                            <div class="login-register-form">
-                                                <form action="#" method="post">
-                                                    <label for="username">Email or Phone*</label>
-                                                    <input type="text" name="Email or phone" placeholder="email or phone">
-                                                    <label for="username">Password*</label>
-                                                    <input type="password" name="user-password" placeholder="password" >
-                                                    <div class="textcolor">
-                                                            <p>By Continuing, you agree to the <a href="#"">Terms of Use</a> and <a href="#"">Privacy policy</a></p>
-                                                    </div>
-                                                    <div class="login-toggle-btn">
-                                                        <input type="checkbox">
-                                                        <label>Remember me</label>
-                                                        <a href="#"><u>Forgot Password?</u></a><br>
-                                                        <a href="#"><u>Resend Varification</u></a>
-                                                    </div>
-                                                    <div class="button-box btn-hover">
-                                                        <button type="submit">Login</button>
-                                                    </div>
-                                                </form>
-                                            </div>
+                                    <hr>  
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                        <label class="form-check-label" for="flexRadioDefault1">
+                                            <p class="font-size-2 mb-2 font-weight-bold"><span><strong>Test 123</strong></span></p>
+                                            <p class="crop-text-1 mb-0 font-size-1 cart-address">lorem inspum asdfjkl; - 45678</p>
+                                            <p class="crop-text-1 mb-0 font-size-1 cart-address">85204565</p>
+                                        </label>
+                                </div>
+                                    <div class="d-flex justify-content-end">     
+                                        <div class="single-product-cart reset-update-btn btn-hover Change-address">
+                                            <a href="#">Change Address</a>
                                         </div>
                                     </div>
-                                    <div id="lg2" class="tab-pane">
-                                        <div class="login-form-container">
-                                            <div class="login-register-form">
-                                                <h3>Create Account</h3>
-                                                <form action="#" method="post">
-                                                        <div class="row">
-                                                            <div class="col-md-6 mb-4">
-                                                                <label for="username">Username*</label>
-                                                                <input type="text" name="user-name" placeholder="username" >
-                                                            </div>
-                                                                <div class="col-md-6 mb-4">
-                                                                    <label for="Phone">Phone*</label>
-                                                                    <input name="user-email" type="phone" placeholder="number">
-                                                                </div>
-                                                                    <div class="col-md-12 mb-4">
-                                                                        <label for="username">Email*</label>
-                                                                        <input name="user-email" type="email" placeholder="abc123@gmail.com ">
-                                                                    </div>
-                                                                        <div class="col-md-6 mb-4">
-                                                                            <label for="username">Password*</label>
-                                                                            <input type="password" name="user-password" placeholder="password">
-                                                                        </div>
-                                                                            <div class="col-md-6 mb-4">
-                                                                                <label for="username">Confirm Password*</label>
-                                                                                <input type="password" name="user-password" >
-                                                                            </div>
-                                                        </div>
-                                                            <div class="textcolor">
-                                                                <p>By Continuing, you agree to the <a href="#"">Terms of Use</a> and <a href="#"">Privacy policy</a></p>
-                                                            </div>
-                                                    <div class="button-box btn-hover">
-                                                        <button type="submit">Sign Up</button>
-                                                            <!-- <div class="alert alert-info p-4">
-                                                                <h4>Note</h4>
-                                                                <p class="mb-0">
-                                                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                                                                    </p><hr>
-                                                                    <small>
-                                                                        Lorem Ipsum is simply dummy text.
-                                                                    </small>
-                                                                        <p></p>
-                                                                    </div> -->
-                                                            <div class="button">
-                                                                <p>Already have an Account?</p>
-                                                                <button type="submit"> Login </button>
-                                                            </div>
-                                                    </div>
-                                                </form>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                        </div>
+                    </div>
+                </div>   
+
+                <div class="your-cart-items">
+                    <h4>Your cart: 1 item(s)</h4>     
+                </div>
+                    <div class="shipping-border shipping-flex"><a href="#"><img src="33676970_1.jpg" width="127"></a>
+                        <div class="col-md-9 getmybook-loop-product__thumbnail mb-3 mb-lg-0">
+                                <a class="cross-1" href="#">×</a>
+                                <h4 class="getmybook-loop-product__title product__title h6 text-lh-md mb-1 crop-text-2 h-dark secondary-font"><a href="#">Hutchison's Clinical Methods : An Integrated Approach To Clinical Practice</a></h4>
+                            <div class="font-weight-medium">
+                                <span>Class: class 11</span>
+                                    <p class="font-weight-medium">2nd language:</p>
+                                    <p class="font-weight-medium"></p>
+                                <span class="Number-items">
+                                    <a href="No. of items:21">No. of items:21</a>
+                                    <i class='fas fa-angle-down'></i>
+                                </span>
                             </div>
+                                <div class="product-quality"><div class="dec qtybutton">-</div>
+                                    <input class="cart-plus-minus-box input-text qty text" name="qtybutton" value="1">
+                                    <div class="inc qtybutton">+</div>
+                                </div>
+                                    <div>
+                                        <span class="getmybook-Price-amount amount"><span>₹</span>1,466.50</span>
+                                        <del>
+                                            <span><span>₹</span>2,095.00</span>
+                                        </del>
+                                    </div>
+                                        <span>30.00% off</span>
+                                        <div>
+                                            <p><i class="#"></i><strong>Delivers Between</strong></p>
+                                        </div>
+                        </div>                   
+                    </div>
+            </div>
+
+            <div class="col-lg-5">
+                <div class="sticky-sidebar overflow-hidden" style="top: 125px;">
+                    <div id="cartAccordion" class="border rounded bg-white mb-5">
+                        <div class="p-3 border-bottom">
+                            <div class="cart-head">
+                                <h3 class="cart-title mb-0 font-weight-medium font-size-3">Price Details</h3>
+                            </div>
+                                <div class="mt-3 cart-content" id="ls-cart-price-details" data-cart-total="2095.00" data-discount-amount="628.50" data-shipping-rate="0.00">
+                                    <table class="shop_table col-lg-12 shop_table_responsive">
+                                        <tbody>
+                                            <tr class="cart-subtotal">
+                                                <th>Total @ MRP</th>
+                                                <td data-title="Subtotal">
+                                                    <span class="getmybook-Price-amount amount secondary-font font-size-3">
+                                                        <span class="getmybook-Price-currencySymbol">₹</span>
+                                                        0
+                                                    </span>
+                                                </td>
+                                            </tr>
+        
+                                            <tr class="order-shipping">
+                                                <th>Total Discount</th>
+                                                <td data-title="discount">
+                                                    <span class="text-green getmybook-Price-amount amount secondary-font font-size-3">
+                                                        <span class="getmybook-Price-currencySymbol">-₹</span>
+                                                        <span> 0</span>
+                                                    </span>
+                                                </td>
+                                            </tr>
+                                                <tr id="is-shippingcharges-available" class="order-shipping">
+                                                    <th>Shipping</th>
+                                                    <td data-title="Shipping"><span class="getmybook-Price-amount amount secondary-font font-size-3">₹<span id="ls-cart-shipping-charge">0</span></span></td>
+                                                </tr>
+                                            <!-- enable roundoff
+                                            <tr class="order-shipping">
+                                                <th>Roundoff</th>
+                                                <td data-title="roundoff">
+                                                    <span class="getmybook-Price-amount amount secondary-font font-size-3">
+                                                        <span id="ls-cart-roundoff-operator" style="display: none">-</span>
+                                                        <span class="getmybook-Price-currencySymbol">₹</span>
+                                                        <span id="ls-cart-roundoff"> 0.00</span>
+                                                    </span>
+                                                </td>
+                                            </tr>
+                                            -->
+                                        </tbody>
+                                    </table>
+                                </div>
+                        </div>
+    
+                        <div class="p-3">
+                            <table class="shop_table col-lg-12 shop_table_responsive">
+                                <tbody>
+                                    <tr class="order-total">
+                                        <th class="font-weight-medium">Total Amount</th>
+                                        <td data-title="Total"><strong><span class="getmybook-Price-amount amount secondary-font font-size-3"><span class="getmybook-Price-currencySymbol">₹</span><span id="ls-cart-grand-total">0</span></span></strong> </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                            <div class="col-md-6">
+                                <div class="d-flex justify-content-end">     
+                                    <div class="single-product-cart reset-update-btn btn-hover">
+                                        <a href="#">Proceed to Shipping</a>
+                                    </div>
+                                </div> 
+                            </div>
+    
+                    <div id="shipment-available-for-pincode" style="display:none">
+                        <br>
+                        <div class="p-4 alert alert-danger">
+                            <p class="mb-0">
+                                You have selected an address with a pincode that our shipping partner does not recognise. Please select another address
+                            </p>
                         </div>
                     </div>
                 </div>
-            </div>					
+            </div>
+        </div>
+    </div>             
 
-
-	<!--'Login-Sign Up' Page End-->						
-								
-									
-								
-					
+    <!--'Cart 10' "Change Address Option When There is atleast Default Addresss" Page End-->	
+		
+    
  <!--Footer Start-->
  <footer class="footer-area">
     <div class="bg-gray-2">
@@ -432,6 +533,20 @@ $(document).ready(function(){
 });
 }
 </script>
+
+ <!-- JavaScript to open and close the pop-up -->
+ <script>
+    function openPopup() {
+        document.getElementById("overlay").style.display = "block";
+        document.getElementById("popup").style.display = "block";
+    }
+    
+    function closePopup() {
+        document.getElementById("overlay").style.display = "none";
+        document.getElementById("popup").style.display = "none";
+    }
+</script>
+
 <script src="assets/js/vendor/modernizr-3.11.7.min.js"></script>
 <script src="assets/js/vendor/jquery-3.6.0.min.js"></script>
 <script src="assets/js/vendor/jquery-migrate-3.3.2.min.js"></script>

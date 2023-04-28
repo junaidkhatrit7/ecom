@@ -42,40 +42,58 @@
     <link rel="stylesheet" href="assets/css/plugins/slinky.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <style>
+            
+    /* Shipping Pages */
+
+        p.getmyooks02 {
+        font-weight: bold !important; 
+        font-size: 16px !important; 
+        margin-bottom: 0px !important;
+        }
+        h4.billing-address {
+        margin-top: 20px;
+        }
+        .collection-point {
+        display: flex;
+        flex-direction: row-reverse;
+            line-height: inherit;
+            text-decoration: none;
+            cursor: pointer;
+            color: #EC8B2D;
+        }
+        .collection-point a {
+        font-size: 17px;
+        }
+        p.getmyooks03 {
+        font-weight: bold;
+        font-size: 16px;
+        margin-bottom: 15px;
+        }
+        span.default-address {
+        font-size: small;
+        }
+        .shipping-border.shipping-flex {
+        margin-bottom: 15px;
+        }
+
+        /*------*/
+
+      
+        table.shop_table.shop_table_responsive tr {
+            display: flex;
+            justify-content: space-between;
+           }
+    
+    </style>
+
 </head>
 
 <body>
     <div class="main-wrapper main-wrapper-2">
-        <header class="header-area header-responsive-padding header-height-1">
-            <div class="header-top d-none d-lg-block bg-gray">
-                <div class="container">
-                    <div class="row align-items-center">
-                        <div class="col-lg-6 col-6">
-                            <div class="welcome-text">
-                                <p>Default Welcome Msg! </p>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 col-6">
-                            <div class="language-currency-wrap">
-                                <div class="currency-wrap border-style">
-                                    <a class="currency-active" href="#"><i class=" ti-instagram "></i></a>
-                                </div>
-                                <div class="currency-wrap border-style">
-                                    <a class="currency-active" href="#"><i class=" ti-facebook "></i></a>
-                                </div>
-                                <div class="currency-wrap border-style">
-                                    <a class="currency-active" href="#"><i class=" ti-twitter "></i></a>
-                                </div>
-                                <div class="currency-wrap border-style">
-                                    <a class="currency-active" href="#"><i class=" ti-youtube "></i></a>
-                                </div>
-                                
-                                
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <header class="header-area header-responsive-padding header-height-3">
             <div class="header-bottom">
                 <div class="container">
                     <div class="row align-items-center">
@@ -84,108 +102,179 @@
                                 <a href="index.html"><img src="assets/images/logo/logo.png" alt="logo"></a>
                             </div>
                         </div>
-                        <div class="col-lg-6 d-none d-lg-block d-flex justify-content-center">
-                            <div class="serchform">
-                                <form action="#">
-                                    <input placeholder="Search books by Title / Author / Publisher" type="text">
-                                    <button class="button-search"><i class="pe-7s-search"></i></button>
-                                </form>
-                            </div>
-                           
-                        </div>
-                        <div class="col-lg-3 col-md-6 col-6">
+                        <div class="col-lg-8 col-md-6 col-6">
                             <div class="header-action-wrap">
-                                <div class="header-action-style">
-                                    <a title="Login Register" href="#"><i class="pe-7s-user"></i><span class="logintitle">Login / Sign Up</span> </a>
+                                <div class="ml-xl-0 ml-md-auto w-r-100 flex-grow-1 mr-md-5 mt-2 mt-md-0 order-1 order-md-0">
+                                    <ol class="checkout-steps list-unstyled mb-0">
+                                        <li class="step active">
+                                            <a href="#">
+                                                <p><i class='far fa-clipboard'></i></i> Cart </p>
+                                            </a>
+                                        </li>
+                                        <li class="divider"></li>
+                                        <li class="step ">
+                                            <a href="#">
+                                                <p><i class="fa fa-truck"></i>Shipping</p>
+                                            </a>
+                                        </li>
+                                        <li class="divider"></li>
+                                        <li class="step ">
+                                            <a>
+                                                <p><i class='far fa-check-circle'></i>Confirmation</p>
+                                            </a>
+                                        </li>
+                                    </ol>
                                 </div>
-                                
-                                <div class="header-action-style header-action-cart">
-                                    <a class="cart-active" href="#"><i class="pe-7s-shopbag"></i>
-                                        <span class="product-count bg-black">02</span>
-                                        
-                                    </a>
-                                </div>
-                                <div class="header-action-style d-block d-lg-none">
-                                    <a class="mobile-menu-active-button" href="#"><i class="pe-7s-menu"></i></a>
-                                </div>
+                                    <div class="header-action-style d-block d-lg-none">
+                                        <a class="mobile-menu-active-button" href="#"><i class="pe-7s-menu"></i></a>
+                                    </div>
                             </div>
-                        </div>
+                        </div> 
                     </div>
                 </div>
-            </div>
-            <div class="header-mainmenu">
-                <div class="container">
-                    <div class="main-menu">
-                        <nav>
-                            <ul>
-                                <li><a href="#">SHOP BY CATEGORY</a></li>
-                                <li><a href="#">Fiction & Literature</a></li>
-                                <li><a href="#">Indian Writing</a></li>
-                                <li><a href="#">Non-Fiction</a></li>
-                                <li><a href="#">Shop by schools</a></li>
-                            </ul>
-                        </nav>
-                    </div>
-
-                </div>
-                
-
             </div>
         </header>
+<body>	
+        <hr>
 
+	<!--'Shipping 1' "Delivery options Without Collection Points" Page Start-->
 
-	
-	
-	<!--'Terms of Use Start-->			
-
-
-<body>
-    <div class="container pt-30 pb-40">
+    <div class="container pt-3 pb-5">
         <div class="row">
-            <div class="col-lg-12 text-left">
-                <div class="Terms">
-								<h3 class="t-1">Terms Of Use</h3>
-								
-						<div class="textalign">
-                            <h5 class="h5-01">Retention of Your Personal Data</h5>
-                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                                <h5 class="h5-01">Transfer of Your Personal Data</h5>
-                                    <p>Your information, including Personal Data, is processed at the Company's operating offices and in any other places where the parties involved in the processing are located. It means that this information may be transferred to  and maintained on  computers located outside of Your state, province, country or other governmental jurisdiction where the data protection laws may differ than those from Your jurisdiction.</p>
-                                    <p>Your consent to this Privacy Policy followed by Your submission of such information represents Your agreement to that transfer.</p>
-                                    <p>The Company will take all steps reasonably necessary to ensure that Your data is treated securely and in accordance with this Privacy Policy and no transfer of Your Personal Data will take place to an organization or a country unless there are adequate controls in place including the security of Your data and other personal information.</p>
-                                        <h5 class="h5-01">Delete Your Personal Data</h5>
-                                            <p>You have the right to delete or request that We assist in deleting the Personal Data that We have collected about You.</p>
-                                            <p>Our Service may give You the ability to delete certain information about You from within the Service.</p>
-                                            <p>You may update, amend, or delete Your information at any time by signing in to Your Account, if you have one, and visiting the account settings section that allows you to manage Your personal information. You may also contact Us to request access to, correct, or delete any personal information that You have provided to Us.</p>
-                                            <p>Please note, however, that We may need to retain certain information when we have a legal obligation or lawful basis to do so.</p>
-                                                <h5 >Disclosure of Your Personal Data</h5>
-                                                    <h5 class="h5-01">Business Transactions</h5>
-                                                        <p>If the Company is involved in a merger, acquisition or asset sale, Your Personal Data may be transferred. We will provide notice before Your Personal Data is transferred and becomes subject to a different Privacy Policy.</p>
-                                                            <h5 class="h5-01">Law enforcement</h5>
-                                                                <p>Under certain circumstances, the Company may be required to disclose Your Personal Data if required to do so by law or in response to valid requests by public authorities (e.g. a court or a government agency).</p>
-                                                                    <h5 class="h5-01">Security of Your Personal Data</h5>
-                                                                        <p>The security of Your Personal Data is important to Us, but remember that no method of transmission over the Internet, or method of electronic storage is 100% secure. While We strive to use commercially acceptable means to protect Your Personal Data, We cannot guarantee its absolute security.</p>
-                                                                <h5 class="h5-01">Links to Other Websites</h5>
-                                                                    <p>Our Service may contain links to other websites that are not operated by Us. If You click on a third party link, You will be directed to that third party's site. We strongly advise You to review the Privacy Policy of every site You visit.</p>
-                                                                    <p>We have no control over and assume no responsibility for the content, privacy policies or practices of any third party sites or services.</p>
-                                                            <h5 class="h5-01">Changes to this Privacy Policy</h5>
-                                                                <p>We may update Our Privacy Policy from time to time. We will notify You of any changes by posting the new Privacy Policy on this page.</p>
-                                                                <p>We will let You know via email and/or a prominent notice on Our Service, prior to the change becoming effective and update the &quot;Last updated&quot; date at the top of this Privacy Policy.</p>
-                                                                <p>You are advised to review this Privacy Policy periodically for any changes. Changes to this Privacy Policy are effective when they are posted on this page.</p>
-                                                        <h5 class="h5-01">Contact Us</h5>
-                                                            <p>If you have any questions about this Privacy Policy, You can contact us:</p>
-                                                    <ul>
-                                                <li><strong>Cookies or Browser Cookies.</strong> A cookie is a small file placed on Your Device. You can instruct Your browser to refuse all Cookies or to indicate when a Cookie is being sent. However, if You do not accept Cookies, You may not be able to use some parts of our Service. Unless you have adjusted Your browser setting so that it will refuse Cookies, our Service may use Cookies.</li>
-                             
-                        </div>						
+            <div class="col-lg-7">
+                <h4>Deliver to</h4>
+                    <div class="shipping-border mb-3">
+                        <p class="font-size-2 mb-2 font-weight-bold"><span><strong>admin admin</strong></span> <span>Default address</span></p>
+                        <p class="crop-text-1 mb-0 font-size-1 cart-address">lorem inspum - 01234</p>
+                        <p class="crop-text-1 mb-0 font-size-1 cart-address">9876543210</p>
+                            <div class="single-product-cart btn-hover Change-address">
+                                <a href="#">Change Address</a>
+                            </div>
+                    </div>   
+
+                <div class="your-cart-items">
+                    <h4>Delivery Options</h4>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                <label class="form-check-label" for="flexRadioDefault1">
+                                    <p class="getmyooks02">GetMyBooks Recommendation</p>
+                                </label>
+                                    <p>₹152 | Expected arrival by Apr 25, 2023</p>
+                        </div>     
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                    <label class="form-check-label" for="flexRadioDefault1">
+                                        <p class="getmyooks02">Cheapest</p>
+                                    </label>
+                                        <p>₹152 | Expected arrival by Apr 25, 2023</p> 
+                            </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                        <label class="form-check-label" for="flexRadioDefault1">
+                                            <p class="getmyooks02">Fastest</p>
+                                        </label>
+                                            <p>₹152 | Expected arrival by Apr 25, 2023</p> 
+                                </div>  
+                </div>
+                                    <h4>Billing Address</h4>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                            <label class="form-check-label" for="flexCheckDefault">
+                                                <p class="getmyooks02">Set billing address same as delivery address</p>
+                                            </label>
+                                        </div>
+                                            <div>
+                                                <div class="col-md-9 getmybook-loop-product__thumbnail mb-3 mb-lg-0">
+                                                </div>                   
+                                            </div>
+            </div>
+
+            <div class="col-lg-5">
+                <div class="sticky-sidebar overflow-hidden" style="top: 125px;">
+                    <div id="cartAccordion" class="border rounded bg-white mb-5">
+                        <div class="p-3 border-bottom">
+                            <div class="cart-head">
+                                <h3 class="cart-title mb-0 font-weight-medium font-size-3">Price Details</h3>
+                            </div>
+                                <div class="mt-3 cart-content" id="ls-cart-price-details" data-cart-total="2095.00" data-discount-amount="628.50" data-shipping-rate="0.00">
+                                    <table class="shop_table col-lg-12 shop_table_responsive">
+                                        <tbody>
+                                            <tr class="cart-subtotal">
+                                                <th>Total @ MRP</th>
+                                                <td data-title="Subtotal">
+                                                    <span class="getmybook-Price-amount amount secondary-font font-size-3">
+                                                        <span class="getmybook-Price-currencySymbol">₹</span>
+                                                        0
+                                                    </span>
+                                                </td>
+                                            </tr>
+        
+                                            <tr class="order-shipping">
+                                                <th>Total Discount</th>
+                                                <td data-title="discount">
+                                                    <span class="text-green getmybook-Price-amount amount secondary-font font-size-3">
+                                                        <span class="getmybook-Price-currencySymbol">-₹</span>
+                                                        <span> 0</span>
+                                                    </span>
+                                                </td>
+                                            </tr>
+                                                <tr id="is-shippingcharges-available" class="order-shipping">
+                                                    <th>Shipping</th>
+                                                    <td data-title="Shipping"><span class="getmybook-Price-amount amount secondary-font font-size-3">₹<span id="ls-cart-shipping-charge">0</span></span></td>
+                                                </tr>
+                                            <!-- enable roundoff
+                                            <tr class="order-shipping">
+                                                <th>Roundoff</th>
+                                                <td data-title="roundoff">
+                                                    <span class="getmybook-Price-amount amount secondary-font font-size-3">
+                                                        <span id="ls-cart-roundoff-operator" style="display: none">-</span>
+                                                        <span class="getmybook-Price-currencySymbol">₹</span>
+                                                        <span id="ls-cart-roundoff"> 0.00</span>
+                                                    </span>
+                                                </td>
+                                            </tr>
+                                            -->
+                                        </tbody>
+                                    </table>
+                                </div>
+                        </div>
+    
+                        <div class="p-3">
+                            <table class="shop_table col-lg-12 shop_table_responsive">
+                                <tbody>
+                                    <tr class="order-total">
+                                        <th class="font-weight-medium">Total Amount</th>
+                                        <td data-title="Total"><strong><span class="getmybook-Price-amount amount secondary-font font-size-3"><span class="getmybook-Price-currencySymbol">₹</span><span id="ls-cart-grand-total">0</span></span></strong> </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+    
+                            <div class="col-md-6">
+                                <div class="d-flex justify-content-end">     
+                                    <div class="single-product-cart reset-update-btn btn-hover">
+                                        <a href="#">Proceed to Payment</a>
+                                    </div>
+                                </div> 
+                            </div>
+    
+                    <div id="shipment-available-for-pincode" style="display:none">
+                        <br>
+                        <div class="p-4 alert alert-danger">
+                            <p class="mb-0">
+                                You have selected an address with a pincode that our shipping partner does not recognise. Please select another address
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
-		</div>
-	</div>
-
-    <!--'Terms of Use End-->
-
+        </div>
+    </div>
+	
+    <!--'Shipping 1' "Delivery options Without Collection Points" Page End-->	
 		
+
  <!--Footer Start-->
  <footer class="footer-area">
     <div class="bg-gray-2">
