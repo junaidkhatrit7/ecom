@@ -1430,15 +1430,23 @@ span.logintitle {
 }
 
 .serchform form input {
-  background-color: #fff;
+  /* background-color: #fff;
   border: 1px solid #E2DCDC;
   color: #000000;
   line-height: 20px;
   padding: 5px 60px 5px 20px;
   width: 100%;
   border-radius: 50px;
-  font-size: 12px;
+  font-size: 12px; */
+  background-color: #fff;
+  border: 1px solid #E2DCDC;
+  color: #000000;
+  line-height: 30px;
+  padding: 5px 60px 5px 20px;
+  width: 100%;
+  border-radius: 50px;
 }
+
 
 .serchform form input::-moz-input-placeholder {
   color: #000000;
@@ -1453,7 +1461,7 @@ span.logintitle {
 .serchform form button.button-search {
   position: absolute;
   right: 0;
-  top: 35%;
+  top: 50%;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
@@ -12818,7 +12826,7 @@ button.school-set-button {
 }
 
 img.book-icon {
-  max-width: 10%;
+  max-width: 100%;
 }
 /*School set defalt end*/
 
