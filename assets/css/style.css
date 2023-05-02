@@ -167,9 +167,9 @@ button {
   color: #EC8B2D; /*----*/ 
 }
 
-.only-mobile.row.align-items-center a, button {
+/* .only-mobile.row.align-items-center a, button {
   color: black !important;
-}
+} */
 
 .header-action-wrap a, button {
   color: black;
@@ -12970,6 +12970,15 @@ h3.Resend-verification {
 /* ----- */
 
 /* Cart Pages */
+p.Header-icons {
+  font-size: 18px;
+}
+
+header.header-area.header-responsive-padding.header-height-3 {
+  margin-bottom: 13px;
+  margin-top: 15px;
+}
+
 .checkout-steps .divider {
   border-bottom: 1px dashed #696B79;
   height: 2px;
@@ -13160,6 +13169,7 @@ p.crop-text-1.mb-0.font-size-1.cart-address {
 
 .p-4.alert.alert-invalid {
   --bs-alert-bg: #f8d7da;
+  margin-top: 35px;
 }
 
 p.mb-99 {
@@ -13194,6 +13204,9 @@ p.invalid-item {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 9999;
+}
+span.text-green.getmybook-Price-amount.amount.secondary-font.font-size-3 {
+  color: #6DBA1F;
 }
 
 

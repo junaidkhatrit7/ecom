@@ -77,19 +77,19 @@
                                     <ol class="checkout-steps list-unstyled mb-0">
                                         <li class="step active">
                                             <a href="#">
-                                                <p><i class='far fa-clipboard'></i> Cart </p>
+                                                <p class="Header-icons"><i class="fa fa-shopping-cart"></i> Cart </p>
                                             </a>
                                         </li>
                                         <li class="divider"></li>
                                         <li class="step ">
                                             <a href="#">
-                                                <p><i class="fa fa-truck"></i>Shipping</p>
+                                                <p class="Header-icons"><i class="fa fa-truck"></i> Shipping</p>
                                             </a>
                                         </li>
                                         <li class="divider"></li>
                                         <li class="step ">
                                             <a>
-                                                <p><i class='far fa-check-circle'></i>Confirmation</p>
+                                                <p class="Header-icons"><i class='far fa-check-circle'></i> Confirmation</p>
                                             </a>
                                         </li>
                                     </ol>
@@ -199,39 +199,35 @@
                             </table>
                         </div>
                     </div>
-                             <div class="codcheck mt-30">
-                            <span>Check Delivery</span>
-                            <div class="serchform mt-10" onsubmit="checkcod()">
-                                <form action="#">
-                                    <input class="border8"placeholder="Enter Pincode" type="text" required>
-                                    <button type="submit" class="button-search">Check</button>
-                                </form>
-                                
+                            <div class="codcheck mt-30">
+                                    <span>Check Delivery</span>
+                                <div class="serchform mt-10" onsubmit="checkcod()">
+                                    <form action="#">
+                                        <input class="border8"placeholder="Enter Pincode" type="text" required>
+                                        <button type="submit" class="button-search">Check</button>
+                                    </form>
+                                    
+                                </div>
+                                    <span id="resultcod"></span>
                             </div>
-                            <span id="resultcod"></span>
-                          </div>
 
-                          <div class="p-4 alert alert-info">
-                            <p class="mb-0">
-                                Items usually ship between 1 - 10 days. Login for exact shipment dates and shipping rates.
-                            </p>
-                        </div>
+                                <div class="p-4 alert alert-info">
+                                    <p class="mb-0">
+                                        Items usually ship between 1 - 10 days. Login for exact shipment dates and shipping rates.
+                                    </p>
+                                </div>
 
-                        <div class="p-4 alert alert-primary">
-                            <h4>
-                                <i class='fas fa-user-alt'></i>
-                                Login to proceed
-                            </h4>
-                            <p class="mb-0">
-                                You have added items to the cart as a guest. If you would like to proceed further, please login to your account
-                                by clicking <a href="#">here</a>.
-                                </p><hr>
-                                <small>
-                                    If you have an existing account, and you already have items in that cart, these items will
-                                    not get transferred to that cart. You will have to re-add these items over there.
-                                </small>
-                            <p></p>
-                        </div>
+                                    <div class="p-4 alert alert-primary">
+                                        <h4><i class='fas fa-user-alt'></i>Login to proceed</h4>
+                                            <p class="mb-0">
+                                                        You have added items to the cart as a guest. If you would like to proceed further, please login to your account
+                                                        by clicking <a href="#">here</a>.
+                                            </p><hr>
+                                                    <small>
+                                                        If you have an existing account, and you already have items in that cart, these items will
+                                                        not get transferred to that cart. You will have to re-add these items over there.
+                                                    </small>
+                                    </div>
 
                         <!-- <div id="shipment-available-for-pincode" style="display:none">
                         <br>
