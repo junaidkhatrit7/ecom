@@ -115,7 +115,7 @@
 			overflow: auto;
 			z-index: 10000;
             width: 440px;
-            height: 400px;
+            height: 462px;
 		}
 		
 		/* Styling for the close button */
@@ -169,6 +169,10 @@
             display: flex;
             justify-content: space-between;
            }
+
+        input#flexRadioDefault12 {
+            margin-top: 15px;
+        }
 	</style>
 
 </head>
@@ -247,7 +251,7 @@
                                 <hr>
                             </div>      
                                 <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault12">
                                         <label class="form-check-label" for="flexRadioDefault1">
                                             <p class="font-size-2 mb-2 font-weight-bold"><span><strong>admin admin</strong></span> <span>(Default address)</span></p>
                                             <p class="crop-text-1 mb-0 font-size-1 cart-address">lorem inspum - 01234</p>
@@ -256,7 +260,7 @@
                                 </div>
                                     <hr>  
                             <div class="form-check">
-                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault12">
                                     <label class="form-check-label" for="flexRadioDefault1">
                                         <p class="font-size-2 mb-2 font-weight-bold"><span><strong>Test 123</strong></span></p>
                                         <p class="crop-text-1 mb-0 font-size-1 cart-address">lorem inspum asdfjkl; - 45678</p>
@@ -282,7 +286,7 @@
                                     <p class="getmyooks02">Choose a collection point  <i class='fas fa-exclamation-circle' style='font-size:18px;color:#ed5757'></i></p>
                                 </label> 
                                     <div class="collection-point">
-                                        <p><a >Change collection point</a></p>
+                                        <p><a onclick="openPopup()">Change collection point</a></p>
                                     </div>    
                             </div>       
                         </div>

@@ -13276,6 +13276,11 @@ span.default-address {
         color: #fff !important;
     }
 
+    a:not([href]):not([class]), a:not([href]):not([class]):hover {
+      color: #EC8B2D;
+      text-decoration: none;
+  }
+
 
 /* ------ */
 }
