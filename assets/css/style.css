@@ -5471,7 +5471,7 @@ span.logintitle {
 }
 
 .product-quality {
-  width: 150px;
+  width: 115px;
   overflow: hidden;
   position: relative;
   border: 1px solid #e8e8e8;
@@ -5479,7 +5479,7 @@ span.logintitle {
 }
 
 .product-quality > input {
-  width: 150px;
+  width: 104px;
   border: none;
   height: 45px;
   line-height: 50px;
