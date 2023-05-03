@@ -12877,6 +12877,9 @@ img.book-icon {
 .accordion-header button{
   color: red;
 }
+h3.faq01 {
+  margin-bottom: 28px;
+}
 
 .accordion-button:not(.collapsed){
   color: red;
