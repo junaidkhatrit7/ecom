@@ -12899,7 +12899,11 @@ img.book-icon {
 
 /* Contact */
 p.c-01 {
-  margin-bottom: 6px;
+  margin-bottom: 22px;
+  font-size: 18px;
+}
+h3.c-02 {
+  margin-bottom: 28px;
 }
 /* ------ */
 
