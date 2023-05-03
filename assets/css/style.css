@@ -11198,8 +11198,8 @@ span.new-price.bold {
   font-size: 14px;
   line-height: 1;
   padding: 14px 30px 13px;
-  letter-spacing: 1px;
-  text-transform: uppercase;
+  letter-spacing: 0px;
+  text-transform: ;
   -webkit-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
