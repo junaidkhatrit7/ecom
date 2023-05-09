@@ -9235,6 +9235,7 @@ span.new-price.bold {
   --bs-accordion-bg: #fff0;
   --bs-accordion-btn-focus-box-shadow:0 0 0 0.20rem rgba(247, 139, 125, 0.25);
 }
+
 .accordion-button:not(.collapsed){
   background-color: #ffffff00;
 }
@@ -9245,6 +9246,19 @@ span.new-price.bold {
 .accordion-icon-active-color{
   color: var(--primary-color);
 }
+
+.accordion-body {
+  background-color: white;
+}
+
+button.accordion-button {
+  background-color: white !important;
+}
+
+button.accordion-button.collapsed {
+  background-color: white;
+}
+
 .filtertitle{
   position: relative;
     font-size: 18px;
