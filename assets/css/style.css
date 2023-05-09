@@ -167,9 +167,9 @@ button {
   color: #EC8B2D; /*----*/ 
 }
 
-.only-mobile.row.align-items-center a, button {
+/* .only-mobile.row.align-items-center a, button {
   color: black !important;
-}
+} */
 
 .header-action-wrap a, button {
   color: black;
@@ -5471,7 +5471,7 @@ span.logintitle {
 }
 
 .product-quality {
-  width: 150px;
+  width: 115px;
   overflow: hidden;
   position: relative;
   border: 1px solid #e8e8e8;
@@ -5479,7 +5479,7 @@ span.logintitle {
 }
 
 .product-quality > input {
-  width: 150px;
+  width: 104px;
   border: none;
   height: 45px;
   line-height: 50px;
@@ -7974,7 +7974,7 @@ span.new-price.bold {
   display: inline-block;
 }
 .codcheck{
-  width: 470px;
+  width: 467px;
 }
 .single-product-cart.blackbg > a{
   background-color: var(--secondary-color);
@@ -11212,8 +11212,8 @@ button.accordion-button.collapsed {
   font-size: 14px;
   line-height: 1;
   padding: 14px 30px 13px;
-  letter-spacing: 1px;
-  text-transform: uppercase;
+  letter-spacing: 0px;
+  text-transform: ;
   -webkit-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
@@ -12891,6 +12891,9 @@ img.book-icon {
 .accordion-header button{
   color: red;
 }
+h3.faq01 {
+  margin-bottom: 28px;
+}
 
 .accordion-button:not(.collapsed){
   color: red;
@@ -12913,7 +12916,11 @@ img.book-icon {
 
 /* Contact */
 p.c-01 {
-  margin-bottom: 6px;
+  margin-bottom: 22px;
+  font-size: 18px;
+}
+h3.c-02 {
+  margin-bottom: 28px;
 }
 /* ------ */
 
@@ -12984,6 +12991,20 @@ h3.Resend-verification {
 /* ----- */
 
 /* Cart Pages */
+p.Header-icons {
+  font-size: 18px;
+}
+
+header.header-area.header-responsive-padding.header-height-3 {
+  margin-bottom: 13px;
+  margin-top: 15px;
+}
+
+.container.pt-3.pb-5 {
+  max-width: 1193px;
+}
+
+
 .checkout-steps .divider {
   border-bottom: 1px dashed #696B79;
   height: 2px;
@@ -13174,6 +13195,7 @@ p.crop-text-1.mb-0.font-size-1.cart-address {
 
 .p-4.alert.alert-invalid {
   --bs-alert-bg: #f8d7da;
+  margin-top: 35px;
 }
 
 p.mb-99 {
@@ -13208,6 +13230,9 @@ p.invalid-item {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 9999;
+}
+span.text-green.getmybook-Price-amount.amount.secondary-font.font-size-3 {
+  color: #6DBA1F;
 }
 
 
@@ -13297,6 +13322,11 @@ span.default-address {
     .btn-hover a:hover{
         color: #fff !important;
     }
+
+    a:not([href]):not([class]), a:not([href]):not([class]):hover {
+      color: #EC8B2D;
+      text-decoration: none;
+  }
 
 
 /* ------ */
