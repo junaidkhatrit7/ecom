@@ -7975,7 +7975,12 @@ span.new-price.bold {
 }
 .codcheck{
   width: 467px;
+  margin-top: 15px;
 }
+.serchform.mt-10 {
+  margin-top: 2px;
+}
+
 .single-product-cart.blackbg > a{
   background-color: var(--secondary-color);
 }
@@ -9201,7 +9206,7 @@ span.new-price.bold {
 }
 
 .sidebar-widget .sidebar-list-style.sidebar-widget-color ul li a.blue:before {
-  background-color: #0000ff;
+  background-color: #ffba00;
 }
 
 .sidebar-widget .sidebar-list-style.sidebar-widget-color ul li a.brown:before {
@@ -12843,7 +12848,6 @@ img.book-icon {
 
 .border-right {
   border-right: 1px solid #EAE8E4 !important;
- 
 }
 
 .login-form-container {
@@ -12852,19 +12856,37 @@ img.book-icon {
 }
 
 .ml-50 {
-    margin-left: 50px;
+    margin-left: 20px;
 }
 
 .single-product-cart.reset-update-btn.btn-hover {
-  margin: -10px 0px 0 0px !important;
+  margin: -25px -100px 0 0px !important;
 }
 
 .new-border hr{
   color: #4d4d4d;
 }
+
+h2.font-weight-medium.font-size-7 {
+  font-size: 35px;
+}
 /*---------*/
 
 /* About page */
+.About {
+  text-align: left;
+  margin-top: 32px;
+  font-weight: bold;
+}
+p.A-01 {
+  margin-bottom: 4px;
+}
+.col-lg-4 {
+  margin-top: 20px;
+  max-inline-size: 390px;
+}
+
+
 .mt-20 p{
   margin-top: 10px; 
   font-size: 17px; 
@@ -12875,15 +12897,15 @@ img.book-icon {
 
 /* FAQ page */
 .accordion-header button{
-  color: red;
+  color: #EC8B2D;
 }
 h3.faq01 {
-  margin-bottom: 28px;
+  margin-bottom: 0px;
+  text-align: center;
 }
 
 .accordion-button:not(.collapsed){
-  color: red;
-  box-shadow: #0000ff;
+  color: #EC8B2D;
 }
 /* ------ */
 
@@ -12914,6 +12936,7 @@ h3.c-02 {
 
 h3.t-1 {
   margin-bottom: 15px;
+  text-align: center;
 }
 h5.h5-01 {
   margin-bottom: 12px;
@@ -12961,9 +12984,11 @@ p.p-01 {
 /* ------- */
 
 .alert-danger {
+  width: 668px;
   --bs-alert-color: 
   --bs-alert-bg: #ffdade;
   --bs-alert-border-color: 
+  
 }
 
 input::placeholder {
@@ -12989,6 +13014,19 @@ header.header-area.header-responsive-padding.header-height-3 {
 .container.pt-3.pb-5 {
   max-width: 1193px;
 }
+.sticky-sidebar.overflow-hidden {
+  margin-top: 34px;
+}
+.sticky-sidebar.overflow-hidden.bottom {
+  margin-top: 55px;
+}
+.sticky-sidebar.overflow-top {
+  margin-top: 55px;
+}
+.sticky-sidebar.overflow-error {
+  margin-top: -2px;
+}
+
 
 
 .checkout-steps .divider {
@@ -13087,10 +13125,10 @@ a.cross-1 {
 }
 
 p.font-size-2.mb-2.font-weight-bold {
-  margin-bottom: 4px 
-  !important;
-  font-size: 20px;
-    margin-top: 9px;
+  margin-bottom: 11px !important;
+  font-size: 16px;
+  margin-top: 9px;
+  margin-left: 15px;
 }
 
 p.font-size-3.mb-2.font-weight-bold {
@@ -13101,7 +13139,11 @@ p.font-size-3.mb-2.font-weight-bold {
   margin: -70px 15px 11px -2px;
 } */
 .single-product-cart.btn-hover.Change-address {
-  margin: -72px 13px 16px -1px;
+  margin: -12px 450px -10px -1px;
+}
+
+.single-product-cart.btn-hover.Change-address.No-address{
+  margin: -9px 25px -68px 0px;
 }
 
 @media (min-width: 1200px){
@@ -13113,14 +13155,28 @@ h4.getmybook-loop-product__title.product__title.h6.text-lh-md.mb-1.crop-text-2.h
   font-size: 20px;
 }
 
+.font-weight-bookset {
+  font-size: 18px;
+}
+
+p.font-weight-items {
+  margin-top: -13px;
+}
+
 .font-weight-medium {
-  font-size: 14px;
+  font-size: 20px;
   margin-bottom: 12px;
 }
 
-/* .product-quality {
-  margin-bottom: 10px;
-} */
+.product-quality {
+  margin-top: 13px;
+}
+
+.font-weight-Author {
+  margin-top: 10px;
+  margin-bottom: 13px;
+  font-size: 17px;
+}
 
 span.getmybook-Price-amount.amount {
   font-size: 20px;
@@ -13130,9 +13186,12 @@ span.getmybook-Price-amount.amount {
   padding-top: 16px;
   padding-bottom: 3px;
 }
+.your-cart-items-top {
+  padding-top: 0px;
+}
 
 .alert.alert-normal.clickable {
-  --bs-alert-bg: #b8e2eb;
+  --bs-alert-bg: lightgrey;
   margin-right: 1px;
 }
 
@@ -13147,18 +13206,20 @@ h3.cart-title.mb-0.font-weight-medium.font-size-3 {
 
 .alert.alert-invalid.clickable {
   --bs-alert-bg: #fd5b5b;
+  margin-right: 62px;
 }
 .p-4 {
   padding: 1.5rem !important;
 }
 .alert-info {
     color: #0c5460;
-    background-color: #d1ecf1;
+    background-color: lightgray;
     border-color: #bee5eb;
 }
 
 .p-4.alert.alert-info {
-  margin-top: 10px;
+  margin-top: 15px;
+  background: lightgray;
 }
 
 p.mb-0 {
@@ -13167,6 +13228,9 @@ p.mb-0 {
 
 p.crop-text-1.mb-0.font-size-1.cart-address {
   font-size: 15px;
+  margin-left: 15px;
+  margin-top: -5px;
+  font-weight: bold;
 }
 
 .alert-info {
@@ -13186,22 +13250,24 @@ p.crop-text-1.mb-0.font-size-1.cart-address {
 
 p.mb-99 {
   font-size: 20px;
-  color: #a15757;
+  color: #535353;
 }
 small.mb-99 {
   font-size: 15px;
-  color: #a15757;
+  color: #535353;
 }
 
 span.Number-items {
   text-decoration: underline;
-  font-size: 16px;
+  font-size: 18px;
 }
 .shipping-border.shipping-flex {
   margin-top: 1px;
 }
 p.invalid-item {
   color: white;
+  margin-bottom: 4px;
+  text-align: center;
 }
 .alert.alert-normal.clickable {
   padding: 4px 4px 10px 10px;
@@ -13221,6 +13287,9 @@ span.text-green.getmybook-Price-amount.amount.secondary-font.font-size-3 {
   color: #6DBA1F;
 }
 
+.product-price {
+  margin-top: 13px;
+}
 
 
 /* Shipping Pages */
@@ -13254,6 +13323,12 @@ span.default-address {
 }
 .shipping-border.shipping-flex {
   margin-bottom: 15px;
+}
+.form-check.delivery {
+  padding-left: 2.5em;
+}
+.form-check.options {
+  padding-left: 0.5em;
 }
 
 
@@ -13316,4 +13391,212 @@ span.default-address {
 
 
 /* ------ */
+
+
+
+
+
+
+
+#heading {
+  text-transform: uppercase;
+  color: #EC8B2D;
+  font-weight: normal
 }
+
+#msform {
+  text-align: center;
+  position: relative;
+  margin-top: -40px;
+}
+
+#msform fieldset {
+  background: white;
+  border: 0 none;
+  border-radius: 0.5rem;
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0;
+  padding-bottom: 20px;
+  position: relative
+}
+
+.form-card {
+  text-align: left
+}
+
+#msform fieldset:not(:first-of-type) {
+  display: none
+}
+
+#msform input,
+#msform textarea {
+  padding: 8px 15px 8px 15px;
+  border: 1px solid #ccc;
+  border-radius: 0px;
+  margin-bottom: 25px;
+  margin-top: 2px;
+  width: 100%;
+  box-sizing: border-box;
+  font-family: montserrat;
+  color: #2C3E50;
+  background-color: #ECEFF1;
+  font-size: 16px;
+  letter-spacing: 1px
+}
+
+#msform input:focus,
+#msform textarea:focus {
+  -moz-box-shadow: none !important;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+  border: 1px solid #EC8B2D;
+  outline-width: 0
+}
+
+#msform .action-button {
+  width: 100px;
+  background: #EC8B2D;
+  font-weight: bold;
+  color: white;
+  border: 0 none;
+  border-radius: 0px;
+  cursor: pointer;
+  padding: 10px 5px;
+  margin: 10px 0px 10px 5px;
+  float: right
+}
+
+#msform .action-button:hover,
+#msform .action-button:focus {
+  background-color: #000000
+}
+
+#msform .action-button-previous {
+  width: 100px;
+  background: #616161;
+  font-weight: bold;
+  color: white;
+  border: 0 none;
+  border-radius: 0px;
+  cursor: pointer;
+  padding: 10px 5px;
+  margin: 10px 5px 10px 0px;
+  float: right
+}
+
+#msform .action-button-previous:hover,
+#msform .action-button-previous:focus {
+  background-color: #000000
+}
+
+.card {
+  z-index: 0;
+  border: none;
+  position: relative
+}
+
+
+.purple-text {
+  color: #EC8B2D;
+  font-weight: normal
+}
+
+.steps {
+  font-size: 25px;
+  color: gray;
+  margin-bottom: 10px;
+  font-weight: normal;
+  text-align: right
+}
+
+.fieldlabels {
+  color: gray;
+  text-align: left
+}
+
+#progressbar {
+  margin-bottom: 0px;
+  overflow: hidden;
+  color: lightgrey
+}
+
+#progressbar .active {
+  color: #EC8B2D;
+
+}
+
+#progressbar li {
+  list-style-type: none;
+  font-size: 15px;
+  width: 25%;
+  float: left;
+  position: relative;
+  font-weight: 400
+}
+
+#progressbar #account:before {
+  font-family: FontAwesome;
+  content: "\f13e"
+}
+
+#progressbar #personal:before {
+  font-family: FontAwesome;
+  content: "\f007"
+}
+
+#progressbar #payment:before {
+  font-family: FontAwesome;
+  content: "\f030"
+}
+
+#progressbar #confirm:before {
+  font-family: FontAwesome;
+  content: "\f00c"
+}
+
+#progressbar li:before {
+  width: 50px;
+  height: 50px;
+  line-height: 45px;
+  display: block;
+  font-size: 20px;
+  color: #ffffff;
+  background: lightgray;
+  border-radius: 50%;
+  margin: 0 auto 10px auto;
+  padding: 2px
+}
+
+#progressbar li:after {
+  content: '';
+  width: 100%;
+  height: 2px;
+  background: lightgray;
+  position: absolute;
+  left: 0;
+  top: 25px;
+  z-index: -1
+}
+
+#progressbar li.active:before,
+#progressbar li.active:after {
+  background: #EC8B2D;
+}
+
+.progress {
+  height: 20px
+}
+
+.progress-bar {
+  background-color: #EC8B2D;
+}
+
+.fit-image {
+  width: 100%;
+  object-fit: cover
+}
+
+
+
+
