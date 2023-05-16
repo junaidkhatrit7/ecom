@@ -42,6 +42,7 @@
     <link rel="stylesheet" href="assets/css/plugins/slinky.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">   
 </head>
 
 
@@ -115,6 +116,27 @@
                         </div>
                     </div>
                 </div>
+                <nav class="nav container">
+                    <div class="nav__menu" id="nav-menu">
+                        <ul class="nav__list shop-filter">
+                            <li class="nav__item">
+                                <a class="" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+                                    <span class="filter-color-1"><i class="fa fa-filter"></i> Filter</span>
+                                </a>
+                            </li>
+                            
+                            <li class="nav__item nav-border">
+                                <span>&#8645;</span>
+                                <select class="nice-select nice-select-style-1">
+                                    <option>Default Sorting</option>
+                                    <option>Sort by popularity</option>
+                                    <option>Sort by average rating</option>
+                                    <option>Sort by latest</option>
+                                </select>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
             </div>
             <div class="header-mainmenu">
                 <div class="container">
@@ -205,7 +227,7 @@
                             <div class="shop-topbar-left only-mobile">
                                 <div class="showing-item">
                                     <a class="" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
-                                        <h4>Filter</h4>
+                                        <h5 class="filter-color">Filter</h5>
                                       </a>
                                 </div>
                             </div>

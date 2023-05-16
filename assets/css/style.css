@@ -86,12 +86,14 @@
   margin-top: 15px;
 }
 
+
 /* reset password page  */
 hr.new-border {
   margin-top: 35px;
   margin-bottom: 11px;
 }
-/* hr setting added */
+
+/* hr added */
 .row.gx-0 > * {
   padding-right: 0px;
   padding-left: 0px;
@@ -12870,6 +12872,19 @@ img.book-icon {
 h2.font-weight-medium.font-size-7 {
   font-size: 35px;
 }
+h2.font-weight-medium.font-size-7 {
+  font-size: 35px;
+  margin-left: 30px;
+}
+span.font-size-3.mb-5.mb-lg-7.d-block.text-gray-700 {
+  font-size: 30px;
+  color: gray;
+  margin-left: 30px;
+}
+ul#pills-tab {
+  margin-left: 30px;
+  margin-top: 25px;
+}
 /*---------*/
 
 /* About page */
@@ -12988,7 +13003,12 @@ p.p-01 {
   --bs-alert-color: 
   --bs-alert-bg: #ffdade;
   --bs-alert-border-color: 
-  
+}
+.alert.alert-danger.clickable {
+  width: 355px;
+  --bs-alert-color: 
+  --bs-alert-bg: #ffdade;
+  --bs-alert-border-color: 
 }
 
 input::placeholder {
@@ -13596,7 +13616,4 @@ span.default-address {
   width: 100%;
   object-fit: cover
 }
-
-
-
 
