@@ -13023,6 +13023,12 @@ p.p-01 {
 .alert.alert-danger.clickable.Error {
   width: 700px;
 }
+.alert.alert-danger.shipping-error {
+  width: 665px;
+}
+.single-product-cart.btn-hover.error-address {
+  margin: -82px 15px 5px 0px;
+}
 /* ------- */
 
 input::placeholder {
@@ -13060,8 +13066,6 @@ header.header-area.header-responsive-padding.header-height-3 {
 .sticky-sidebar.overflow-error {
   margin-top: -2px;
 }
-
-
 
 .checkout-steps .divider {
   border-bottom: 1px dashed #696B79;
@@ -13259,6 +13263,12 @@ h3.cart-title.mb-0.font-weight-medium.font-size-3 {
   background: lightgray;
 }
 
+.p-4.alert.alert-primary {
+  background: #fdd2a9;
+  color: #000000;
+}
+
+
 p.mb-0 {
   font-size: 15px;
 }
@@ -13349,6 +13359,10 @@ h4.billing-address {
 }
 .collection-point a {
   font-size: 17px;
+}
+p.collection {
+  margin-bottom: 0px;
+  margin-top: -40px;
 }
 p.getmyooks03 {
   font-weight: bold;
