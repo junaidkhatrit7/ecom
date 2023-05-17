@@ -12847,7 +12847,9 @@ img.book-icon {
   color: #000000;
   width: 100%;
 }
-
+.login-register-form.password {
+  margin-left: 15px;
+}
 .border-right {
   border-right: 1px solid #EAE8E4 !important;
 }
@@ -12884,6 +12886,12 @@ span.font-size-3.mb-5.mb-lg-7.d-block.text-gray-700 {
 ul#pills-tab {
   margin-left: 30px;
   margin-top: 25px;
+}
+.login-register-form.password {
+    margin-left: 15px;
+}
+.single-product-cart.update-update-btn.btn-hover {
+  margin: 0px 650px 0px 0px;
 }
 /*---------*/
 
@@ -12935,6 +12943,9 @@ h3.faq01 {
   line-height: 0.5px;
   margin-top: 30px;
 }
+.button.login {
+  margin: 0px 0px 0px 545px;
+}
 /* ------- */
 
 /* Contact */
@@ -12948,7 +12959,6 @@ h3.c-02 {
 /* ------ */
 
 /* Terms */
-
 h3.t-1 {
   margin-bottom: 15px;
   text-align: center;
@@ -12997,7 +13007,7 @@ p.p-01 {
   margin-bottom: 7px;
 }
 /* ------- */
-
+/* Alerts*/
 .alert-danger {
   width: 668px;
   --bs-alert-color: 
@@ -13010,6 +13020,10 @@ p.p-01 {
   --bs-alert-bg: #ffdade;
   --bs-alert-border-color: 
 }
+.alert.alert-danger.clickable.Error {
+  width: 700px;
+}
+/* ------- */
 
 input::placeholder {
   opacity: 0.5 !important;
@@ -13164,6 +13178,9 @@ p.font-size-3.mb-2.font-weight-bold {
 
 .single-product-cart.btn-hover.Change-address.No-address{
   margin: -9px 25px -68px 0px;
+}
+.single-product-cart.btn-hover.Change-address.al-address {
+  margin: -80px 10px 6px 0px;
 }
 
 @media (min-width: 1200px){
@@ -13417,7 +13434,6 @@ span.default-address {
 
 
 
-
 #heading {
   text-transform: uppercase;
   color: #EC8B2D;
@@ -13427,7 +13443,7 @@ span.default-address {
 #msform {
   text-align: center;
   position: relative;
-  margin-top: -40px;
+  margin-top: -55px;
 }
 
 #msform fieldset {
@@ -13436,6 +13452,7 @@ span.default-address {
   border-radius: 0.5rem;
   box-sizing: border-box;
   width: 100%;
+  height: 20px;
   margin: 0;
   padding-bottom: 20px;
   position: relative
@@ -13616,4 +13633,6 @@ span.default-address {
   width: 100%;
   object-fit: cover
 }
+
+
 
