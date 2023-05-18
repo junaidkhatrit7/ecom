@@ -12964,7 +12964,12 @@ h3.t-1 {
   text-align: center;
 }
 h5.h5-01 {
-  margin-bottom: 12px;
+  margin-bottom: 9px;
+  margin-top: 15px;
+}
+h5.h5-02 {
+  margin-top: 28px;
+  margin-bottom: -12px;
 }
 .Terms p{
   margin-top: -11px;
@@ -13025,6 +13030,9 @@ p.p-01 {
 }
 .alert.alert-danger.shipping-error {
   width: 665px;
+}
+.alert.alert-danger.reset-password {
+  width: 414px;
 }
 .single-product-cart.btn-hover.error-address {
   margin: -82px 15px 5px 0px;
@@ -13381,6 +13389,22 @@ span.default-address {
 .form-check.options {
   padding-left: 0.5em;
 }
+
+/* Verify OTP */
+.login-form-container.otp-verify {
+  padding: 32px;
+}
+p.registeration-otp {
+  margin-bottom: 4px;
+}
+p.enter-otp {
+  margin-bottom: 8px;
+}
+p.Receive-otp {
+  margin-top: 10px;
+  margin-bottom: 3px;
+}
+/* ------ */
 
 
 /* Cart pop-up box Started */
