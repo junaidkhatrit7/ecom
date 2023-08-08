@@ -12387,7 +12387,8 @@ ul.icon-inline p {
   margin-bottom: 1rem;
   border: 1px solid transparent;
   border-radius: 8px;
-  margin-right: 50px;
+  margin-right: 0px;
+  /* margin-right: 50px; */
 }
 
 .display-inline{
@@ -12863,8 +12864,12 @@ img.book-icon {
     margin-left: 20px;
 }
 
-.single-product-cart.reset-update-btn.btn-hover {
+/* .single-product-cart.reset-update-btn.btn-hover {
   margin: -25px -100px 0 0px !important;
+} */
+
+.mr-0 {
+  margin-right: 0;
 }
 
 .new-border hr{
@@ -13184,9 +13189,10 @@ p.font-size-3.mb-2.font-weight-bold {
 /* .single-product-cart {
   margin: -70px 15px 11px -2px;
 } */
-.single-product-cart.btn-hover.Change-address {
+
+/* .single-product-cart.btn-hover.Change-address {
   margin: -12px 450px -10px -1px;
-}
+} */
 
 .single-product-cart.btn-hover.Change-address.No-address{
   margin: -9px 25px -68px 0px;
@@ -13240,7 +13246,7 @@ span.getmybook-Price-amount.amount {
 }
 
 .alert.alert-normal.clickable {
-  --bs-alert-bg: lightgrey;
+  --bs-alert-bg: #ec8b2d21;
   margin-right: 1px;
 }
 
@@ -13268,11 +13274,11 @@ h3.cart-title.mb-0.font-weight-medium.font-size-3 {
 
 .p-4.alert.alert-info {
   margin-top: 15px;
-  background: lightgray;
+  background: #ededed;
 }
 
 .p-4.alert.alert-primary {
-  background: #fdd2a9;
+  background: #ededed;
   color: #000000;
 }
 
@@ -13289,10 +13295,10 @@ p.crop-text-1.mb-0.font-size-1.cart-address {
 }
 
 .alert-info {
-  color: #0c5460;
   background-color: #d1ecf1;
-  border-color: #bee5eb;
+  border-color: #ffffff00;
 }
+
 .small, small {
   font-size: 20px;
 }
@@ -13672,5 +13678,11 @@ p.Receive-otp {
   object-fit: cover
 }
 
+@media (min-width: 951px){
+  .shipping-border.mb-3 {
+    display: flex;
+    justify-content: space-between;
+  }
+}
 
 
