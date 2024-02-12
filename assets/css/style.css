@@ -2030,7 +2030,7 @@ span.logintitle {
 
 /*-------- 03. Slider style ---------*/
 .slider-height-1 {
-  height: 500px;
+  height: 300px;
 }
 
 @media only screen and (min-width: 1366px) and (max-width: 1600px) {
@@ -2497,9 +2497,9 @@ span.logintitle {
 
 .main-slider-nav {
   position: absolute;
-  z-index: 9;
-  left: 19.3%;
-  bottom: 16%;
+  z-index: 9999 !important;
+  left: 50% !important;
+  top: 75% !important;
   font-size: 40px;
   -webkit-transition: all .3s ease 0s;
   -o-transition: all .3s ease 0s;
@@ -8928,7 +8928,7 @@ span.new-price.bold {
 /*-------- Sidebar style ---------*/
 
 .sidebar-wrapper {
-  background-color: #F6F6F6;
+  background-color: #fff6ee;
   padding: 20px;
   border-radius: 10px;
   position: sticky;
@@ -12491,8 +12491,8 @@ h5.about-start-next {
 }
 
 .school-set-details-new{
-  background-color: #F3F3F3;
-    border: 1px solid #ffffff;
+  background-color: #fff;
+    border: 1px solid #dbdbdb;
     padding: 15px 15px 0px 15px;
     border-radius: 5px;
 }
@@ -13140,7 +13140,7 @@ a.cross-1 {
     flex-direction: row-reverse;
     font-size: 24px;
     line-height: 6px;
-    width: 105%;
+    width: 100%;
     --bs-link-hover-color: #000000;
 }
 
@@ -13686,3 +13686,247 @@ p.Receive-otp {
 }
 
 
+/* Cart Page by PM*/
+
+.main-title h2{
+  font-weight: 600;
+}
+
+.pb-30{
+  padding-bottom: 30px;
+}
+
+.cart-border{
+border-radius: 8px !important;
+border: 1px solid #eae8e4 !important;}
+
+.pl-15{
+  padding-left: 15px;
+}
+
+.pl-10{
+  padding-left: 10px;
+}
+
+.pl-30{
+  padding-left: 30px;
+}
+
+.pr-30{
+  padding-right: 30px;
+}
+
+hr.cart-hr {
+  margin-bottom: auto;
+}
+
+.pb-50{
+  padding-bottom: 50px;
+}
+
+.pt-50{
+  padding-top: 50px;
+}
+
+td.cart-total {
+  text-align: end;
+}
+
+.container.cart-total-right {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.fs-18{
+  font-size: 18px;
+  margin-top: -25px !important;
+}
+
+.border-radius-15{
+  border-radius: 15px;
+}
+
+.cart-head.cart-total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cart-total-bg {
+  background-color: #ec8b2d;
+  color: white;
+  padding: 5px 15px;
+}
+
+.p-0{
+  padding-bottom: 0px !important;
+}
+
+.mb-0{
+  margin-bottom: 0px;
+}
+
+.container.shipping-right {
+  display: flex;
+  justify-content: space-between;
+}
+
+button.shipping-button {
+  background-color: #ec8b2d;
+  color: white;
+  padding: 10px 30px;
+  border: 0px;
+  font-size: 20px;
+}
+
+.mt-20{
+  margin-top: 20px;
+}
+
+input.input-radius {
+  border-radius: 15px;
+}
+
+label.input-label {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.shipping-right-bg.mb-5 {
+  background-color: #f8f8f8;
+}
+
+.shipping-des {
+  display: flex;
+}
+
+.font-weight-600{
+  font-weight: 600;
+}
+
+.cart-review-count{
+    padding: 10px 40px;
+    border: 2px solid #eae8e4;
+    border-radius: 5px;
+}
+
+.cart-review-count p {
+  margin-bottom: 0px !important;
+}
+
+.mr-30{
+  margin-right: 30px;
+}
+
+.mr-60{
+  margin-right: 60px;
+}
+
+.sticky-sidebar {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 20px; /* Adjust this value based on your design */
+}
+
+/* Add a specific class to the sidebar container */
+.col-lg-4.sticky-sidebar {
+  height: 100%; /* Set a height for the container */
+}
+
+.header-mainmenu {
+  background-color: #333; /* Change this to your desired background color */
+}
+
+.main-menu nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.main-menu nav ul li {
+  display: inline-block;
+  position: relative;
+}
+
+.main-menu nav ul li a {
+  display: block;
+  padding: 0px 20px;
+  color: #fff; /* Change this to your desired text color */
+  text-decoration: none;
+}
+
+.main-menu nav ul ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff; /* Change this to your desired background color */
+  padding: 0px; /* Adjust the padding as needed */
+}
+
+.main-menu nav ul li:hover > ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 0px; /* Adjust the gap as needed */
+}
+
+.main-menu nav ul ul li {
+  display: block;
+}
+
+.main-menu nav ul ul a {
+  padding: 15px;
+  color: #333; /* Change this to your desired text color */
+  text-decoration: none;
+}
+
+.main-menu nav ul ul ul {
+  top: 0;
+  left: 100%;
+}
+
+.main-menu nav ul ul ul li {
+  display: block;
+}
+
+/* Additional styling for better visibility on hover */
+.main-menu nav ul li:hover > a {
+  background-color: #555; /* Change this to your desired background color */
+  color: #fff; /* Change this to your desired text color */
+}
+
+.main-menu > nav > ul > li > ul {
+  padding: 0px !important;
+  width: -webkit-fill-available;
+}
+
+.main-menu > nav > ul > li > ul li{
+  margin-bottom: 0px !important;
+}
+
+.main-menu > nav > ul > li > ul li:hover > a{
+  background-color: #f5f3f3; 
+}    
+
+ul.parent-menu a {
+    display: flex !important;
+    justify-content: space-between;
+}
+
+ul.child-menu {
+  border-left: 1px solid #ec8b2d;
+}
+
+/* home */
+i.fa.fa-angle-left {
+  border: 0px;
+}
+
+i.fa.fa-angle-right {
+  border: 0px;
+}
+
+.col-lg-8.pr-80.pb-0 {
+  padding-bottom: 0px !important;
+  padding-top: 30px !important;
+}

@@ -62,7 +62,10 @@
         navigation: {
             nextEl: '.home-slider-next , .home-slider-next2 , .home-slider-next3',
             prevEl: '.home-slider-prev , .home-slider-prev2 , .home-slider-prev3',
-        }
+        },
+        pagination: {
+            el: ".swiper-pagination",
+          },
     });
     
 

@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Logicsoft - Minimal eCommerce HTML Template</title>
+    <title>Cart - Empty Cart</title>
     <meta name="robots" content="noindex, follow" />
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -27,21 +27,37 @@
 
     <!-- All CSS is here
 	============================================ -->
-    <link rel="stylesheet" href="assets/css/vendor/bootstrap.min.css" />
-    <link rel="stylesheet" href="assets/css/vendor/pe-icon-7-stroke.css" />
-    <link rel="stylesheet" href="assets/css/vendor/themify-icons.css" />
-    <link rel="stylesheet" href="assets/css/vendor/font-awesome.min.css" />
-    <link rel="stylesheet" href="assets/css/plugins/animate.css" />
-    <link rel="stylesheet" href="assets/css/plugins/aos.css" />
-    <link rel="stylesheet" href="assets/css/plugins/magnific-popup.css" />
-    <link rel="stylesheet" href="assets/css/plugins/swiper.min.css" />
-    <link rel="stylesheet" href="assets/css/plugins/jquery-ui.css" />
-    <link rel="stylesheet" href="assets/css/plugins/nice-select.css" />
-    <link rel="stylesheet" href="assets/css/plugins/select2.min.css" />
-    <link rel="stylesheet" href="assets/css/plugins/easyzoom.css" />
-    <link rel="stylesheet" href="assets/css/plugins/slinky.css" />
-    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="../assets/css/vendor/bootstrap.min.css" />
+    <link rel="stylesheet" href="../assets/css/vendor/pe-icon-7-stroke.css" />
+    <link rel="stylesheet" href="../assets/css/vendor/themify-icons.css" />
+    <link rel="stylesheet" href="../assets/css/vendor/font-awesome.min.css" />
+    <link rel="stylesheet" href="../assets/css/plugins/animate.css" />
+    <link rel="stylesheet" href="../assets/css/plugins/aos.css" />
+    <link rel="stylesheet" href="../assets/css/plugins/magnific-popup.css" />
+    <link rel="stylesheet" href="../assets/css/plugins/swiper.min.css" />
+    <link rel="stylesheet" href="../assets/css/plugins/jquery-ui.css" />
+    <link rel="stylesheet" href="../assets/css/plugins/nice-select.css" />
+    <link rel="stylesheet" href="../assets/css/plugins/select2.min.css" />
+    <link rel="stylesheet" href="../assets/css/plugins/easyzoom.css" />
+    <link rel="stylesheet" href="../assets/css/plugins/slinky.css" />
+    <link rel="stylesheet" href="../assets/css/style.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        /* Style for the popup */
+        #popup {
+            display: none;
+            position: absolute;
+            z-index: 999;
+            border-radius: 20px;
+            border: 1px solid rgba(212, 212, 212, 0.90);
+            background: #F9F8F8;   
+            width: 700px;
+            top: 635px !important; 
+            left: 915px !important; 
+        }
+    </style>
+
 </head>
 
 <body>
@@ -81,7 +97,7 @@
                     <div class="row align-items-center">
                         <div class="col-lg-3 col-md-6 col-6">
                             <div class="logo">
-                                <a href="index.html"><img src="assets/images/logo/logo.png" alt="logo"></a>
+                                <a href="index.html"><img src="../assets/images/logo/logo.png" alt="logo"></a>
                             </div>
                         </div>
                         <div class="col-lg-6 d-none d-lg-block d-flex justify-content-center">
@@ -132,65 +148,83 @@
 
             </div>
         </header>
+        <!-- mini cart start -->
+        <div class="sidebar-cart-active">
+            <div class="sidebar-cart-all">
+                <a class="cart-close" href="#"><i class="pe-7s-close"></i></a>
+                <div class="cart-content">
+                    <h3>Shopping Cart</h3>
+                    <ul>
+                        <li>
+                            <div class="cart-img">
+                                <a href="#"><img src="../assets/images/product/book1.png" alt=""></a>
+                            </div>
+                            <div class="cart-title">
+                                <h4><a href="#">Tales From Thakurmar</a></h4>
+                                <span> 1 × ₹279	</span>
+                            </div>
+                            <div class="cart-delete">
+                                <a href="#">×</a>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="cart-img">
+                                <a href="#"><img src="../assets/images/product/Book2.png" alt=""></a>
+                            </div>
+                            <div class="cart-title">
+                                <h4><a href="#">Geronimo Stilton Micekings</a></h4>
+                                <span> 1 × ₹400	</span>
+                            </div>
+                            <div class="cart-delete">
+                                <a href="#">×</a>
+                            </div>
+                        </li>
+                       
+                    </ul>
+                    <div class="cart-total">
+                        <h4>Subtotal: <span>₹679</span></h4>
+                    </div>
+                    <div class="cart-btn btn-hover">
+                        <a class="theme-color" href="#">view cart</a>
+                    </div>
+                    <div class="checkout-btn btn-hover">
+                        <a class="theme-color" href="#">checkout</a>
+                    </div>
+                </div>
+            </div>
+        </div>
 
 
-	
-	
-	<!--'Forgot Password' Page Start-->			
+
+<!--'About' Page End-->			
 
 
 <body>
     <div class="" style="background-color: #EFE9E3;">
         <div class="container pt-30 pb-30">
                 <div class="main-title">
-                    <h2>Forgot Password?</h2>
+                    <h2>My Cart - Empty Cart</h2>
                 </div>
         </div>
     </div>
-   
-    <div class="login-register-area pb-40 pt-30">
+    <!--'Cart 1' "Empty Cart (Same for both Customer and Guest)" Page Start-->			
+			
+    <div class="login-register-area pt-30 pb-50">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-5 col-md-8 offset-lg-4">
-                    <div class="login-register-wrapper">
-                        <div class="login-register-tab-list nav">
-                        </div>
-                        <div class="tab-content">
-                            <div id="lg1" class="tab-pane active">
-                                <div class="login-form-container">
-                                    <div class="login-register-form">
-                                        <form action="#" method="post">
-                                            <label for="username">Email*</label>
-                                            <input type="text" name="Email or phone">   
-                                            <div class="button-box btn-hover">
-                                                <button type="submit">Recover Password</button><br><br>
-                                                <div class="textcolor">
-                                                    <p>Remember your password? <a href="#">LogIn</a></p>
-                                                </div>
-                                            </div>
-                                        </form>
-                                    </div>
-                                </div>
-                            </div>  
-                        </div>
-                    </div>
+            <div class="col-md-6 offset-md-3">
+                <div class="border rounded p-3">
+                    <p class="cart-1"><i class="fa fa-shopping-cart"></i> Your cart is empty</p>
+                    <span class="font-size-2 font-weight-medium">There is nothing in your cart. You can go back to the <a href="#">home page</a> and begin shopping</span>
                 </div>
             </div>
         </div>
     </div>
-            				
-				
-                                
+    <!--'Cart 1' "Empty Cart (Same for both Customer and Guest)" Page End-->	
+    
 
+    <!--'About' Page End-->	
 
-		
-											
-	<!--'FOrgot Password' Page End-->						
-								
-									
-								
-					
-		
  <!--Footer Start-->
  <footer class="footer-area">
     <div class="bg-gray-2">
@@ -200,11 +234,11 @@
                     <div class="col-lg-3 col-md-6 col-sm-6 col-12">
                         <div class="footer-widget footer-about mb-40">
                             <div class="footer-logo">
-                                <a href="index.html"><img src="assets/images/logo/logo.png" alt="logo"></a>
+                                <a href="index.html"><img src="../assets/images/logo/logo.png" alt="logo"></a>
                             </div>
                             <p>Lorem ipsum dolor sit amet, cons adipi elit, sed do eiusmod tempor incididunt ut aliqua.</p>
                             <div class="payment-img">
-                                <a href="#"><img src="assets/images/icon-img/payment.png" alt="logo"></a>
+                                <a href="#"><img src="../assets/images/icon-img/payment.png" alt="logo"></a>
                             </div>
                         </div>
                     </div>
@@ -352,12 +386,12 @@
                 </div>
             </div>
             <div class="language-wrap">
-                <a class="language-active" href="#"><img src="assets/images/icon-img/flag.png" alt=""> English <i class=" ti-angle-down "></i></a>
+                <a class="language-active" href="#"><img src="../assets/images/icon-img/flag.png" alt=""> English <i class=" ti-angle-down "></i></a>
                 <div class="language-dropdown">
                     <ul>
-                        <li><a href="#"><img src="assets/images/icon-img/flag.png" alt="">English </a></li>
-                        <li><a href="#"><img src="assets/images/icon-img/spanish.png" alt="">Spanish</a></li>
-                        <li><a href="#"><img src="assets/images/icon-img/arabic.png" alt="">Arabic </a></li>
+                        <li><a href="#"><img src="../assets/images/icon-img/flag.png" alt="">English </a></li>
+                        <li><a href="#"><img src="../assets/images/icon-img/spanish.png" alt="">Spanish</a></li>
+                        <li><a href="#"><img src="../assets/images/icon-img/arabic.png" alt="">Arabic </a></li>
                     </ul>
                 </div>
             </div>
@@ -376,30 +410,59 @@ $(document).ready(function(){
 });
 }
 </script>
-<script src="assets/js/vendor/modernizr-3.11.7.min.js"></script>
-<script src="assets/js/vendor/jquery-3.6.0.min.js"></script>
-<script src="assets/js/vendor/jquery-migrate-3.3.2.min.js"></script>
-<script src="assets/js/vendor/popper.min.js"></script>
-<script src="assets/js/vendor/bootstrap.min.js"></script>
-<script src="assets/js/plugins/wow.js"></script>
-<script src="assets/js/plugins/scrollup.js"></script>
-<script src="assets/js/plugins/aos.js"></script>
-<script src="assets/js/plugins/magnific-popup.js"></script>
-<script src="assets/js/plugins/jquery.syotimer.min.js"></script>
-<script src="assets/js/plugins/swiper.min.js"></script>
-<script src="assets/js/plugins/imagesloaded.pkgd.min.js"></script>
-<script src="assets/js/plugins/isotope.pkgd.min.js"></script>
-<script src="assets/js/plugins/jquery-ui.js"></script>
-<script src="assets/js/plugins/jquery-ui-touch-punch.js"></script>
-<script src="assets/js/plugins/jquery.nice-select.min.js"></script>
-<script src="assets/js/plugins/waypoints.min.js"></script>
-<script src="assets/js/plugins/counterup.min.js"></script>
-<script src="assets/js/plugins/select2.min.js"></script>
-<script src="assets/js/plugins/easyzoom.js"></script>
-<script src="assets/js/plugins/slinky.min.js"></script>
-<script src="assets/js/plugins/ajax-mail.js"></script>
+<script src="../assets/js/vendor/modernizr-3.11.7.min.js"></script>
+<script src="../assets/js/vendor/jquery-3.6.0.min.js"></script>
+<script src="../assets/js/vendor/jquery-migrate-3.3.2.min.js"></script>
+<script src="../assets/js/vendor/popper.min.js"></script>
+<script src="../assets/js/vendor/bootstrap.min.js"></script>
+<script src="../assets/js/plugins/wow.js"></script>
+<script src="../assets/js/plugins/scrollup.js"></script>
+<script src="../assets/js/plugins/aos.js"></script>
+<script src="../assets/js/plugins/magnific-popup.js"></script>
+<script src="../assets/js/plugins/jquery.syotimer.min.js"></script>
+<script src="../assets/js/plugins/swiper.min.js"></script>
+<script src="../assets/js/plugins/imagesloaded.pkgd.min.js"></script>
+<script src="../assets/js/plugins/isotope.pkgd.min.js"></script>
+<script src="../assets/js/plugins/jquery-ui.js"></script>
+<script src="../assets/js/plugins/jquery-ui-touch-punch.js"></script>
+<script src="../assets/js/plugins/jquery.nice-select.min.js"></script>
+<script src="../assets/js/plugins/waypoints.min.js"></script>
+<script src="../assets/js/plugins/counterup.min.js"></script>
+<script src="../assets/js/plugins/select2.min.js"></script>
+<script src="../assets/js/plugins/easyzoom.js"></script>
+<script src="../assets/js/plugins/slinky.min.js"></script>
+<script src="../assets/js/plugins/ajax-mail.js"></script>
 <!-- Main JS -->
-<script src="assets/js/main.js"></script>
+<script src="../assets/js/main.js"></script>
+
+<script>
+    // Function to show the popup
+    function showPopup(event) {
+        // Get the position of the click event
+        const x = event.clientX;
+        const y = event.clientY;
+
+        // Get the popup element
+        const popup = document.getElementById("popup");
+
+        // Set the position of the popup
+        popup.style.left = x + "px";
+        popup.style.top = y + "px";
+
+        // Display the popup
+        popup.style.display = "block";
+    }
+
+    // Add click event listener to the anchor tag with id "popupTrigger"
+    document.getElementById("popupTrigger").addEventListener("click", function(event) {
+        // Prevent the default behavior of the anchor tag
+        event.preventDefault();
+
+        // Call the function to show the popup, passing the event
+        showPopup(event);
+    });
+</script>
+
 </body>
 </html>
        
